@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Arogga Web Automation Suite" verbose="1" parallel="none" thread-count="1">
+    <test name="Serial Regression" preserve-order="true">
+        <classes>
+            <class name="tests.user.AuthenticationTest"/>
+            <class name="tests.user.HomePageTest"/>
+            <class name="tests.user.LoginTest"/>
+            <class name="tests.user.OtpTest"/>
+            <class name="tests.user.SearchPageTest"/>
+            <class name="tests.user.AddProductToCartTest">
+                <methods>
+                    <include name="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors"/>
+                    <include name="verifyDynamicProductCardContentAssetsAndAlignment"/>
+                    <include name="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting"/>
+                    <include name="verifyDynamicAddButtonSelectorAndToastLifecycle"/>
+                    <include name="verifyDynamicProductAddToCartAndQuantityState"/>
+                    <include name="verifyDynamicCartPagePriceCalculationAndRefreshPersistence"/>
+                    <include name="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests"/>
+                    <include name="verifyQuantitySelectionAndRemoveProduct"/>
+                    <include name="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule"/>
+                    <include name="verifyDynamicCartDrawerRegressionAfterAddingProduct"/>
+                    <include name="verifyAddProductToCartFromSearchResultAfterLoginAndSearch"/>
+                </methods>
+            </class>
+            <class name="tests.user.OrderTest">
+                <methods>
+                    <include name="verifyShippingAddressRegressionInsideCartDrawer"/>
+                    <include name="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression"/>
+                </methods>
+            </class>
+            <class name="tests.admin.AdminOrderConfirmationTest">
+                <methods>
+                    <include name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder"/>
+                </methods>
+            </class>
+            <class name="tests.admin.ShipmentProcessingTest">
+                <methods>
+                    <include name="verifyShipmentProcessingForConfirmedGeneratedOrder"/>
+                </methods>
+            </class>
+            <class name="tests.user.VisualRegressionTest"/>
+        </classes>
+    </test>
+</suite>
+
