@@ -1,3 +1,5 @@
+nano .gitignore
+git restore --staged src/test/resources/config/config.properties
 target/
 .idea/
 *.iml
@@ -46,3 +48,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+.tmp.driveupload/
