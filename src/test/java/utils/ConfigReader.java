@@ -60,7 +60,7 @@ public interface ConfigReader extends Config {
     boolean cartPersistsAfterLogoutLogin();
 
     @Key("dynamicProductSearchKeyword")
-    @DefaultValue("a")
+    @DefaultValue("Vaseline Lip Therapy Cocoa Butter 20g")
     String dynamicProductSearchKeyword();
 
     @Key("adminBaseUrl")

@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="14" total="85" passed="68" failed="1" skipped="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Screenshot captured: /Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/screenshots/verifyAddProductToCartFromSearchResultAfterLoginAndSearch_20260819_111430_182.png]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-08-19T10:48:22 GMT+06:00" name="Arogga Web Automation Suite" finished-at="2026-08-19T11:20:56 GMT+06:00" duration-ms="1954160">
+    <groups>
+      <group name="search">
+        <method signature="SearchPageTest.verifyBackButtonIsVisibleAndFunctional()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyBackButtonIsVisibleAndFunctional" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyDynamicSearchShowsAutomaticResultsAfterTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyDynamicSearchShowsAutomaticResultsAfterTyping" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyEmptySearchBehaviorAndRecentSearchClear()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyEmptySearchBehaviorAndRecentSearchClear" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyNoResultsStateWhenNoMatchingProductsExist()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyNoResultsStateWhenNoMatchingProductsExist" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyScrollingLoadsAdditionalProducts()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyScrollingLoadsAdditionalProducts" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifySearchPageUiIntegrity()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifySearchPageUiIntegrity" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifySearchSuggestionsAreDisplayedWhileTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifySearchSuggestionsAreDisplayedWhileTyping" class="tests.user.SearchPageTest"/>
+      </group> <!-- search -->
+      <group name="auth">
+        <method signature="AuthenticationTest.verifyLogoutCancelKeepsSession()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyLogoutCancelKeepsSession" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifyLogoutConfirmLogsOut()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyLogoutConfirmLogsOut" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifySessionPersistsAfterRefresh()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifySessionPersistsAfterRefresh" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifySuccessfulLoginRedirectsToHome()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifySuccessfulLoginRedirectsToHome" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifyValidOtpLogsInSuccessfully()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyValidOtpLogsInSuccessfully" class="tests.user.AuthenticationTest"/>
+      </group> <!-- auth -->
+      <group name="regression">
+        <method signature="AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" class="tests.admin.AdminOrderConfirmationTest"/>
+        <method signature="ShipmentProcessingTest.verifyShipmentProcessingForConfirmedGeneratedOrder()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" name="verifyShipmentProcessingForConfirmedGeneratedOrder" class="tests.admin.ShipmentProcessingTest"/>
+        <method signature="AddProductToCartTest.verifyAddProductToCartFromSearchResultAfterLoginAndSearch()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyAddProductToCartFromSearchResultAfterLoginAndSearch" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicAddButtonSelectorAndToastLifecycle()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicAddButtonSelectorAndToastLifecycle" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicCartPagePriceCalculationAndRefreshPersistence()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicCartPagePriceCalculationAndRefreshPersistence" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicProductAddToCartAndQuantityState()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicProductAddToCartAndQuantityState" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicProductCardContentAssetsAndAlignment()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicProductCardContentAssetsAndAlignment" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyQuantitySelectionAndRemoveProduct()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyQuantitySelectionAndRemoveProduct" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests" class="tests.user.AddProductToCartTest"/>
+        <method signature="AuthenticationTest.verifyLogoutCancelKeepsSession()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyLogoutCancelKeepsSession" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifyLogoutConfirmLogsOut()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyLogoutConfirmLogsOut" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifySessionPersistsAfterRefresh()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifySessionPersistsAfterRefresh" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifySuccessfulLoginRedirectsToHome()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifySuccessfulLoginRedirectsToHome" class="tests.user.AuthenticationTest"/>
+        <method signature="AuthenticationTest.verifyValidOtpLogsInSuccessfully()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" name="verifyValidOtpLogsInSuccessfully" class="tests.user.AuthenticationTest"/>
+        <method signature="HomePageTest.verifyAllNavigationIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyAllNavigationIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyCategoryIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyCategoryIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyFooterIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyFooterIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyHeaderLogo()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyHeaderLogo" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyHomePageLoads()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyHomePageLoads" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyProfileAvatar()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyProfileAvatar" class="tests.user.HomePageTest"/>
+        <method signature="LoginTest.verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyEmptyPhoneNumberValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyEmptyPhoneNumberValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyExpiredOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyExpiredOtpShowsProperValidationMessage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyGoogleLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyGoogleLoginButton" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyIncorrectOtpCannotCompleteLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyIncorrectOtpCannotCompleteLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyInvalidOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyInvalidOtpShowsProperValidationMessage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyInvalidPhoneLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyInvalidPhoneLengthValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLinkedInLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLinkedInLoginButton" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLoginPageLoadsSuccessfully()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLoginPageLoadsSuccessfully" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLoginSessionRemainsActiveAfterPageRefresh()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLoginSessionRemainsActiveAfterPageRefresh" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLogoutFunctionality()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLogoutFunctionality" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyNonNumericCharactersValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyNonNumericCharactersValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpInputAcceptsOnlyNumericValues()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpInputAcceptsOnlyNumericValues" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpInputFieldIsDisplayedAfterClickingSend()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpInputFieldIsDisplayedAfterClickingSend" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpLengthValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPhoneNumberFieldIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPhoneNumberFieldIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPrivacyPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPrivacyPolicyLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPrivacyPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPrivacyPolicyLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyRefundReturnPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyRefundReturnPolicyLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyRefundReturnPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyRefundReturnPolicyLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyResendOtpButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyResendOtpButtonIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySendButtonEnabledAfterValidPhone()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySendButtonEnabledAfterValidPhone" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySendButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySendButtonIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyTermsAndConditionsLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyTermsAndConditionsLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyTermsAndConditionsLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyTermsAndConditionsLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserCanLoginAgainAfterLogout()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserCanLoginAgainAfterLogout" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserProfileAccountIconIsDisplayedAfterLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserProfileAccountIconIsDisplayedAfterLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserRedirectedToHomePageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserRedirectedToHomePageAfterSuccessfulLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyValidPhoneNumberCanBeEntered()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyValidPhoneNumberCanBeEntered" class="tests.user.LoginTest"/>
+        <method signature="OrderTest.verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression()[pri:0, instance:tests.user.OrderTest@5b6ec132]" name="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression" class="tests.user.OrderTest"/>
+        <method signature="OrderTest.verifyShippingAddressRegressionInsideCartDrawer()[pri:0, instance:tests.user.OrderTest@5b6ec132]" name="verifyShippingAddressRegressionInsideCartDrawer" class="tests.user.OrderTest"/>
+        <method signature="OtpTest.verifyClickingSendOpensOtpPage()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyClickingSendOpensOtpPage" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyInvalidOtpError()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyInvalidOtpError" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyOtpExpiry()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyOtpExpiry" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyOtpPageLoads()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyOtpPageLoads" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyReferralCodeAccordion()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyReferralCodeAccordion" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyUpdatePhoneNumber()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyUpdatePhoneNumber" class="tests.user.OtpTest"/>
+        <method signature="SearchPageTest.verifyBackButtonIsVisibleAndFunctional()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyBackButtonIsVisibleAndFunctional" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyDynamicSearchShowsAutomaticResultsAfterTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyDynamicSearchShowsAutomaticResultsAfterTyping" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyEmptySearchBehaviorAndRecentSearchClear()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyEmptySearchBehaviorAndRecentSearchClear" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyNoResultsStateWhenNoMatchingProductsExist()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyNoResultsStateWhenNoMatchingProductsExist" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifyScrollingLoadsAdditionalProducts()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifyScrollingLoadsAdditionalProducts" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifySearchPageUiIntegrity()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifySearchPageUiIntegrity" class="tests.user.SearchPageTest"/>
+        <method signature="SearchPageTest.verifySearchSuggestionsAreDisplayedWhileTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" name="verifySearchSuggestionsAreDisplayedWhileTyping" class="tests.user.SearchPageTest"/>
+        <method signature="VisualRegressionTest.verifyNoUnexpectedUiChangesAfterDeployment()[pri:0, instance:tests.user.VisualRegressionTest@1fc32e4f]" name="verifyNoUnexpectedUiChangesAfterDeployment" class="tests.user.VisualRegressionTest"/>
+      </group> <!-- regression -->
+      <group name="visual">
+        <method signature="VisualRegressionTest.verifyNoUnexpectedUiChangesAfterDeployment()[pri:0, instance:tests.user.VisualRegressionTest@1fc32e4f]" name="verifyNoUnexpectedUiChangesAfterDeployment" class="tests.user.VisualRegressionTest"/>
+      </group> <!-- visual -->
+      <group name="admin">
+        <method signature="AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" class="tests.admin.AdminOrderConfirmationTest"/>
+        <method signature="ShipmentProcessingTest.verifyShipmentProcessingForConfirmedGeneratedOrder()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" name="verifyShipmentProcessingForConfirmedGeneratedOrder" class="tests.admin.ShipmentProcessingTest"/>
+      </group> <!-- admin -->
+      <group name="otp">
+        <method signature="OtpTest.verifyClickingSendOpensOtpPage()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyClickingSendOpensOtpPage" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyInvalidOtpError()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyInvalidOtpError" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyOtpExpiry()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyOtpExpiry" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyOtpPageLoads()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyOtpPageLoads" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyReferralCodeAccordion()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyReferralCodeAccordion" class="tests.user.OtpTest"/>
+        <method signature="OtpTest.verifyUpdatePhoneNumber()[pri:0, instance:tests.user.OtpTest@2796aeae]" name="verifyUpdatePhoneNumber" class="tests.user.OtpTest"/>
+      </group> <!-- otp -->
+      <group name="add-to-cart">
+        <method signature="AddProductToCartTest.verifyAddProductToCartFromSearchResultAfterLoginAndSearch()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyAddProductToCartFromSearchResultAfterLoginAndSearch" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicAddButtonSelectorAndToastLifecycle()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicAddButtonSelectorAndToastLifecycle" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicCartPagePriceCalculationAndRefreshPersistence()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicCartPagePriceCalculationAndRefreshPersistence" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicProductAddToCartAndQuantityState()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicProductAddToCartAndQuantityState" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicProductCardContentAssetsAndAlignment()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicProductCardContentAssetsAndAlignment" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyQuantitySelectionAndRemoveProduct()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyQuantitySelectionAndRemoveProduct" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting" class="tests.user.AddProductToCartTest"/>
+        <method signature="AddProductToCartTest.verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" name="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests" class="tests.user.AddProductToCartTest"/>
+        <method signature="OrderTest.verifyShippingAddressRegressionInsideCartDrawer()[pri:0, instance:tests.user.OrderTest@5b6ec132]" name="verifyShippingAddressRegressionInsideCartDrawer" class="tests.user.OrderTest"/>
+      </group> <!-- add-to-cart -->
+      <group name="login">
+        <method signature="AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" class="tests.admin.AdminOrderConfirmationTest"/>
+        <method signature="LoginTest.verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyEmptyPhoneNumberValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyEmptyPhoneNumberValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyExpiredOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyExpiredOtpShowsProperValidationMessage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyGoogleLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyGoogleLoginButton" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyIncorrectOtpCannotCompleteLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyIncorrectOtpCannotCompleteLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyInvalidOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyInvalidOtpShowsProperValidationMessage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyInvalidPhoneLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyInvalidPhoneLengthValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLinkedInLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLinkedInLoginButton" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLoginPageLoadsSuccessfully()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLoginPageLoadsSuccessfully" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLoginSessionRemainsActiveAfterPageRefresh()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLoginSessionRemainsActiveAfterPageRefresh" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyLogoutFunctionality()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyLogoutFunctionality" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyNonNumericCharactersValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyNonNumericCharactersValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpInputAcceptsOnlyNumericValues()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpInputAcceptsOnlyNumericValues" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpInputFieldIsDisplayedAfterClickingSend()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpInputFieldIsDisplayedAfterClickingSend" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyOtpLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyOtpLengthValidation" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPhoneNumberFieldIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPhoneNumberFieldIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPrivacyPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPrivacyPolicyLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyPrivacyPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyPrivacyPolicyLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyRefundReturnPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyRefundReturnPolicyLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyRefundReturnPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyRefundReturnPolicyLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyResendOtpButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyResendOtpButtonIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySendButtonEnabledAfterValidPhone()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySendButtonEnabledAfterValidPhone" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySendButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySendButtonIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyTermsAndConditionsLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyTermsAndConditionsLinkIsDisplayed" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyTermsAndConditionsLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyTermsAndConditionsLinkOpensCorrectPage" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserCanLoginAgainAfterLogout()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserCanLoginAgainAfterLogout" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserProfileAccountIconIsDisplayedAfterLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserProfileAccountIconIsDisplayedAfterLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyUserRedirectedToHomePageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyUserRedirectedToHomePageAfterSuccessfulLogin" class="tests.user.LoginTest"/>
+        <method signature="LoginTest.verifyValidPhoneNumberCanBeEntered()[pri:0, instance:tests.user.LoginTest@56673b2c]" name="verifyValidPhoneNumberCanBeEntered" class="tests.user.LoginTest"/>
+      </group> <!-- login -->
+      <group name="home">
+        <method signature="HomePageTest.verifyAllNavigationIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyAllNavigationIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyCategoryIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyCategoryIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyFooterIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyFooterIcons" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyHeaderLogo()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyHeaderLogo" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyHomePageLoads()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyHomePageLoads" class="tests.user.HomePageTest"/>
+        <method signature="HomePageTest.verifyProfileAvatar()[pri:0, instance:tests.user.HomePageTest@172b013]" name="verifyProfileAvatar" class="tests.user.HomePageTest"/>
+      </group> <!-- home -->
+      <group name="order">
+        <method signature="AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" class="tests.admin.AdminOrderConfirmationTest"/>
+        <method signature="ShipmentProcessingTest.verifyShipmentProcessingForConfirmedGeneratedOrder()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" name="verifyShipmentProcessingForConfirmedGeneratedOrder" class="tests.admin.ShipmentProcessingTest"/>
+        <method signature="OrderTest.verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression()[pri:0, instance:tests.user.OrderTest@5b6ec132]" name="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression" class="tests.user.OrderTest"/>
+        <method signature="OrderTest.verifyShippingAddressRegressionInsideCartDrawer()[pri:0, instance:tests.user.OrderTest@5b6ec132]" name="verifyShippingAddressRegressionInsideCartDrawer" class="tests.user.OrderTest"/>
+      </group> <!-- order -->
+      <group name="admin-order-confirmation">
+        <method signature="AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" class="tests.admin.AdminOrderConfirmationTest"/>
+      </group> <!-- admin-order-confirmation -->
+    </groups>
+    <test started-at="2026-08-19T10:48:22 GMT+06:00" name="Serial Regression" finished-at="2026-08-19T11:20:56 GMT+06:00" duration-ms="1954160">
+      <class name="tests.user.VisualRegressionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.VisualRegressionTest@1fc32e4f]" started-at="2026-08-19T11:18:22 GMT+06:00" name="setUp" finished-at="2026-08-19T11:18:24 GMT+06:00" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNoUnexpectedUiChangesAfterDeployment()[pri:0, instance:tests.user.VisualRegressionTest@1fc32e4f]" started-at="2026-08-19T11:18:24 GMT+06:00" name="verifyNoUnexpectedUiChangesAfterDeployment" description="Verify no unexpected UI changes after deployment" finished-at="2026-08-19T11:18:24 GMT+06:00" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoUnexpectedUiChangesAfterDeployment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.VisualRegressionTest@1fc32e4f]" started-at="2026-08-19T11:18:24 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:18:24 GMT+06:00" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.VisualRegressionTest -->
+      <class name="tests.user.OtpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:08 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:10 GMT+06:00" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyClickingSendOpensOtpPage()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:10 GMT+06:00" name="verifyClickingSendOpensOtpPage" description="Verify clicking Send opens OTP page" finished-at="2026-08-19T10:53:11 GMT+06:00" duration-ms="934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingSendOpensOtpPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:11 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:11 GMT+06:00" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:11 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:12 GMT+06:00" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidOtpError()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:12 GMT+06:00" name="verifyInvalidOtpError" description="Verify invalid OTP error" finished-at="2026-08-19T10:53:19 GMT+06:00" duration-ms="6473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidOtpError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:19 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:19 GMT+06:00" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:19 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:20 GMT+06:00" duration-ms="1255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyOtpExpiry()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:20 GMT+06:00" name="verifyOtpExpiry" description="Verify OTP expiry" finished-at="2026-08-19T10:53:20 GMT+06:00" duration-ms="1" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[OTP expiry is disabled for this test environment.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: OTP expiry is disabled for this test environment.
+at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+at tests.user.OtpTest.verifyOtpExpiry(OtpTest.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpExpiry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:20 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:20 GMT+06:00" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:20 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:21 GMT+06:00" duration-ms="1391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyOtpPageLoads()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:21 GMT+06:00" name="verifyOtpPageLoads" description="Verify OTP page loads" finished-at="2026-08-19T10:53:22 GMT+06:00" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:22 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:22 GMT+06:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:22 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:24 GMT+06:00" duration-ms="1206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyReferralCodeAccordion()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:24 GMT+06:00" name="verifyReferralCodeAccordion" description="Verify Referral Code accordion" finished-at="2026-08-19T10:53:24 GMT+06:00" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReferralCodeAccordion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:24 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:24 GMT+06:00" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:24 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:25 GMT+06:00" duration-ms="1356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUpdatePhoneNumber()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:25 GMT+06:00" name="verifyUpdatePhoneNumber" description="Verify Update Phone Number" finished-at="2026-08-19T10:53:26 GMT+06:00" duration-ms="1056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdatePhoneNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OtpTest@2796aeae]" started-at="2026-08-19T10:53:26 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:27 GMT+06:00" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.OtpTest -->
+      <class name="tests.admin.AdminOrderConfirmationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" started-at="2026-08-19T11:18:12 GMT+06:00" name="setUp" finished-at="2026-08-19T11:18:15 GMT+06:00" duration-ms="2800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAdminCanLoginSearchAndConfirmGeneratedOrder()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" started-at="2026-08-19T11:18:15 GMT+06:00" name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" description="Verify Admin can login, search generated order and confirm it" finished-at="2026-08-19T11:18:22 GMT+06:00" duration-ms="7467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminCanLoginSearchAndConfirmGeneratedOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.admin.AdminOrderConfirmationTest@146dfe6]" started-at="2026-08-19T11:18:22 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:18:22 GMT+06:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.admin.AdminOrderConfirmationTest -->
+      <class name="tests.user.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:49:47 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:49 GMT+06:00" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:49:49 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:49:51 GMT+06:00" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:49:51 GMT+06:00" name="verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin" description="Verify browser Back button does not return to the Login page after successful login" finished-at="2026-08-19T10:49:58 GMT+06:00" duration-ms="7867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:49:58 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:00 GMT+06:00" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:00 GMT+06:00" name="verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage" description="Verify clicking Google Login redirects to Google authentication page" finished-at="2026-08-19T10:50:02 GMT+06:00" duration-ms="2173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:02 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:05 GMT+06:00" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:05 GMT+06:00" name="verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage" description="Verify clicking LinkedIn Login redirects to LinkedIn authentication page" finished-at="2026-08-19T10:50:06 GMT+06:00" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:06 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:08 GMT+06:00" duration-ms="1887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyEmptyPhoneNumberValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:08 GMT+06:00" name="verifyEmptyPhoneNumberValidation" description="Verify empty phone number validation" finished-at="2026-08-19T10:50:09 GMT+06:00" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyPhoneNumberValidation -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:09 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:11 GMT+06:00" duration-ms="1841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyExpiredOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:11 GMT+06:00" name="verifyExpiredOtpShowsProperValidationMessage" description="Verify expired OTP shows proper validation message" finished-at="2026-08-19T10:50:11 GMT+06:00" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[OTP expiry is disabled for this test environment.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: OTP expiry is disabled for this test environment.
+at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+at tests.user.LoginTest.verifyExpiredOtpShowsProperValidationMessage(LoginTest.java:245)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyExpiredOtpShowsProperValidationMessage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:11 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:16 GMT+06:00" duration-ms="5118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyGoogleLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:16 GMT+06:00" name="verifyGoogleLoginButton" description="Verify Google Login button" finished-at="2026-08-19T10:50:17 GMT+06:00" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoogleLoginButton -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:17 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:19 GMT+06:00" duration-ms="1949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyIncorrectOtpCannotCompleteLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:19 GMT+06:00" name="verifyIncorrectOtpCannotCompleteLogin" description="Verify incorrect OTP cannot complete login" finished-at="2026-08-19T10:50:26 GMT+06:00" duration-ms="6969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIncorrectOtpCannotCompleteLogin -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:26 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:27 GMT+06:00" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyInvalidOtpShowsProperValidationMessage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:27 GMT+06:00" name="verifyInvalidOtpShowsProperValidationMessage" description="Verify invalid OTP shows proper validation message" finished-at="2026-08-19T10:50:34 GMT+06:00" duration-ms="6941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidOtpShowsProperValidationMessage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:34 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:37 GMT+06:00" duration-ms="2706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyInvalidPhoneLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:37 GMT+06:00" name="verifyInvalidPhoneLengthValidation" description="Verify invalid phone length validation" finished-at="2026-08-19T10:50:38 GMT+06:00" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPhoneLengthValidation -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:38 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:40 GMT+06:00" duration-ms="1962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyLinkedInLoginButton()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:40 GMT+06:00" name="verifyLinkedInLoginButton" description="Verify LinkedIn Login button" finished-at="2026-08-19T10:50:41 GMT+06:00" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedInLoginButton -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:41 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:42 GMT+06:00" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyLoginPageLoadsSuccessfully()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:42 GMT+06:00" name="verifyLoginPageLoadsSuccessfully" description="Verify Login page loads successfully" finished-at="2026-08-19T10:50:43 GMT+06:00" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageLoadsSuccessfully -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:43 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:45 GMT+06:00" duration-ms="1829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyLoginSessionRemainsActiveAfterPageRefresh()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:45 GMT+06:00" name="verifyLoginSessionRemainsActiveAfterPageRefresh" description="Verify login session remains active after page refresh" finished-at="2026-08-19T10:50:52 GMT+06:00" duration-ms="7319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSessionRemainsActiveAfterPageRefresh -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:52 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:50:54 GMT+06:00" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyLogoutFunctionality()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:50:54 GMT+06:00" name="verifyLogoutFunctionality" description="Verify logout functionality" finished-at="2026-08-19T10:51:04 GMT+06:00" duration-ms="9258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutFunctionality -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:04 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:05 GMT+06:00" duration-ms="1814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyNonNumericCharactersValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:05 GMT+06:00" name="verifyNonNumericCharactersValidation" description="Verify non-numeric characters validation" finished-at="2026-08-19T10:51:06 GMT+06:00" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNonNumericCharactersValidation -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:06 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:08 GMT+06:00" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyOtpInputAcceptsOnlyNumericValues()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:08 GMT+06:00" name="verifyOtpInputAcceptsOnlyNumericValues" description="Verify OTP input accepts only numeric values" finished-at="2026-08-19T10:51:09 GMT+06:00" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpInputAcceptsOnlyNumericValues -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:09 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:11 GMT+06:00" duration-ms="1889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyOtpInputFieldIsDisplayedAfterClickingSend()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:11 GMT+06:00" name="verifyOtpInputFieldIsDisplayedAfterClickingSend" description="Verify OTP input field is displayed after clicking Send" finished-at="2026-08-19T10:51:13 GMT+06:00" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpInputFieldIsDisplayedAfterClickingSend -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:13 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:14 GMT+06:00" duration-ms="1830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyOtpLengthValidation()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:14 GMT+06:00" name="verifyOtpLengthValidation" description="Verify OTP length validation" finished-at="2026-08-19T10:51:21 GMT+06:00" duration-ms="6966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtpLengthValidation -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:21 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:23 GMT+06:00" duration-ms="1800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyPhoneNumberFieldIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:23 GMT+06:00" name="verifyPhoneNumberFieldIsDisplayed" description="Verify Phone Number field is displayed" finished-at="2026-08-19T10:51:24 GMT+06:00" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhoneNumberFieldIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:24 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:25 GMT+06:00" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyPrivacyPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:25 GMT+06:00" name="verifyPrivacyPolicyLinkIsDisplayed" description="Verify Privacy Policy link is displayed" finished-at="2026-08-19T10:51:26 GMT+06:00" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyLinkIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:26 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:28 GMT+06:00" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyPrivacyPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:28 GMT+06:00" name="verifyPrivacyPolicyLinkOpensCorrectPage" description="Verify Privacy Policy link opens the correct page" finished-at="2026-08-19T10:51:29 GMT+06:00" duration-ms="1486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyLinkOpensCorrectPage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:29 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:31 GMT+06:00" duration-ms="1890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyRefundReturnPolicyLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:31 GMT+06:00" name="verifyRefundReturnPolicyLinkIsDisplayed" description="Verify Refund &amp; Return Policy link is displayed" finished-at="2026-08-19T10:51:32 GMT+06:00" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRefundReturnPolicyLinkIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:32 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:34 GMT+06:00" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyRefundReturnPolicyLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:34 GMT+06:00" name="verifyRefundReturnPolicyLinkOpensCorrectPage" description="Verify Refund &amp; Return Policy link opens the correct page" finished-at="2026-08-19T10:51:35 GMT+06:00" duration-ms="1437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRefundReturnPolicyLinkOpensCorrectPage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:35 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:51:37 GMT+06:00" duration-ms="1754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyResendOtpButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:51:37 GMT+06:00" name="verifyResendOtpButtonIsDisplayed" description="Verify Resend OTP button is displayed" finished-at="2026-08-19T10:52:08 GMT+06:00" duration-ms="31106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResendOtpButtonIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:08 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:12 GMT+06:00" duration-ms="3986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifySendButtonEnabledAfterValidPhone()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:12 GMT+06:00" name="verifySendButtonEnabledAfterValidPhone" description="Verify Send button enabled after valid phone" finished-at="2026-08-19T10:52:13 GMT+06:00" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendButtonEnabledAfterValidPhone -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:13 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:15 GMT+06:00" duration-ms="1775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifySendButtonIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:15 GMT+06:00" name="verifySendButtonIsDisplayed" description="Verify Send button is displayed" finished-at="2026-08-19T10:52:16 GMT+06:00" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySendButtonIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:16 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:18 GMT+06:00" duration-ms="1938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:18 GMT+06:00" name="verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp" description="Verify successful login using valid phone number and valid OTP" finished-at="2026-08-19T10:52:24 GMT+06:00" duration-ms="6534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:24 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:26 GMT+06:00" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyTermsAndConditionsLinkIsDisplayed()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:26 GMT+06:00" name="verifyTermsAndConditionsLinkIsDisplayed" description="Verify Terms &amp; Conditions link is displayed" finished-at="2026-08-19T10:52:26 GMT+06:00" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsAndConditionsLinkIsDisplayed -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:26 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:28 GMT+06:00" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyTermsAndConditionsLinkOpensCorrectPage()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:28 GMT+06:00" name="verifyTermsAndConditionsLinkOpensCorrectPage" description="Verify Terms &amp; Conditions link opens the correct page" finished-at="2026-08-19T10:52:30 GMT+06:00" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsAndConditionsLinkOpensCorrectPage -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:30 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:32 GMT+06:00" duration-ms="1971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyUserCanLoginAgainAfterLogout()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:32 GMT+06:00" name="verifyUserCanLoginAgainAfterLogout" description="Verify user can login again after logout" finished-at="2026-08-19T10:52:47 GMT+06:00" duration-ms="14827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginAgainAfterLogout -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:47 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:49 GMT+06:00" duration-ms="2002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyUserProfileAccountIconIsDisplayedAfterLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:49 GMT+06:00" name="verifyUserProfileAccountIconIsDisplayedAfterLogin" description="Verify authenticated header menus and layout after login" finished-at="2026-08-19T10:52:56 GMT+06:00" duration-ms="7569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserProfileAccountIconIsDisplayedAfterLogin -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:56 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:52:58 GMT+06:00" duration-ms="2030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyUserRedirectedToHomePageAfterSuccessfulLogin()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:52:58 GMT+06:00" name="verifyUserRedirectedToHomePageAfterSuccessfulLogin" description="Verify user is redirected to Home page after successful login" finished-at="2026-08-19T10:53:05 GMT+06:00" duration-ms="6979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRedirectedToHomePageAfterSuccessfulLogin -->
+        <test-method is-config="true" signature="resetLoginTestState()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:53:05 GMT+06:00" name="resetLoginTestState" finished-at="2026-08-19T10:53:07 GMT+06:00" duration-ms="2125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetLoginTestState -->
+        <test-method signature="verifyValidPhoneNumberCanBeEntered()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:53:07 GMT+06:00" name="verifyValidPhoneNumberCanBeEntered" description="Verify valid phone number can be entered" finished-at="2026-08-19T10:53:08 GMT+06:00" duration-ms="936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidPhoneNumberCanBeEntered -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.LoginTest@56673b2c]" started-at="2026-08-19T10:53:08 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:53:08 GMT+06:00" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.LoginTest -->
+      <class name="tests.admin.ShipmentProcessingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" started-at="2026-08-19T11:18:24 GMT+06:00" name="setUp" finished-at="2026-08-19T11:18:25 GMT+06:00" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyShipmentProcessingForConfirmedGeneratedOrder()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" started-at="2026-08-19T11:18:25 GMT+06:00" name="verifyShipmentProcessingForConfirmedGeneratedOrder" description="Verify Admin can create, verify, inspect and track shipment for confirmed generated order" depends-on-groups="admin-order-confirmation" finished-at="2026-08-19T11:20:56 GMT+06:00" duration-ms="150544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShipmentProcessingForConfirmedGeneratedOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.admin.ShipmentProcessingTest@4716be8b]" started-at="2026-08-19T11:20:56 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:20:56 GMT+06:00" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.admin.ShipmentProcessingTest -->
+      <class name="tests.user.AddProductToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:55:48 GMT+06:00" name="setUp" finished-at="2026-08-19T10:55:56 GMT+06:00" duration-ms="8568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:55:56 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:56:11 GMT+06:00" duration-ms="14359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:11 GMT+06:00" name="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors" description="Verify dynamic search result loads with an available product and no JavaScript errors" finished-at="2026-08-19T10:56:14 GMT+06:00" duration-ms="3679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:14 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:56:18 GMT+06:00" duration-ms="3454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:18 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:56:47 GMT+06:00" duration-ms="29326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyDynamicProductCardContentAssetsAndAlignment()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:47 GMT+06:00" name="verifyDynamicProductCardContentAssetsAndAlignment" description="Verify dynamic product card content, assets, formatting and alignment" finished-at="2026-08-19T10:56:47 GMT+06:00" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicProductCardContentAssetsAndAlignment -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:47 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:56:50 GMT+06:00" duration-ms="2890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:56:50 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:57:04 GMT+06:00" duration-ms="14026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:04 GMT+06:00" name="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting" description="Verify quantity selector options and selected quantity highlighting" finished-at="2026-08-19T10:57:05 GMT+06:00" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:05 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:57:10 GMT+06:00" duration-ms="4952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:10 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:57:41 GMT+06:00" duration-ms="31026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyDynamicAddButtonSelectorAndToastLifecycle()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:41 GMT+06:00" name="verifyDynamicAddButtonSelectorAndToastLifecycle" description="Verify dynamic ADD opens quantity selector without reload and toast appears once then dismisses" finished-at="2026-08-19T10:57:48 GMT+06:00" duration-ms="6337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicAddButtonSelectorAndToastLifecycle -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:48 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:57:51 GMT+06:00" duration-ms="3934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:57:51 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:58:16 GMT+06:00" duration-ms="24857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyDynamicProductAddToCartAndQuantityState()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:58:16 GMT+06:00" name="verifyDynamicProductAddToCartAndQuantityState" description="Verify dynamic product can be added to cart and quantity state updates" finished-at="2026-08-19T10:58:23 GMT+06:00" duration-ms="7105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicProductAddToCartAndQuantityState -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:58:23 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:58:27 GMT+06:00" duration-ms="3453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:58:27 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:58:55 GMT+06:00" duration-ms="27896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyDynamicCartPagePriceCalculationAndRefreshPersistence()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:58:55 GMT+06:00" name="verifyDynamicCartPagePriceCalculationAndRefreshPersistence" description="Verify cart page dynamic product details, price calculation and refresh persistence" finished-at="2026-08-19T10:59:25 GMT+06:00" duration-ms="30475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicCartPagePriceCalculationAndRefreshPersistence -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:59:25 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:59:30 GMT+06:00" duration-ms="5043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:59:30 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T10:59:46 GMT+06:00" duration-ms="15913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:59:46 GMT+06:00" name="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests" description="Verify rapid ADD clicks do not create duplicate cart items, toasts or failed requests" finished-at="2026-08-19T10:59:49 GMT+06:00" duration-ms="2931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:59:49 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T10:59:53 GMT+06:00" duration-ms="4005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T10:59:53 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T11:01:08 GMT+06:00" duration-ms="74425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyQuantitySelectionAndRemoveProduct()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:01:08 GMT+06:00" name="verifyQuantitySelectionAndRemoveProduct" description="Verify quantity selection and product removal update cart correctly" finished-at="2026-08-19T11:01:40 GMT+06:00" duration-ms="32749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQuantitySelectionAndRemoveProduct -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:01:40 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T11:01:43 GMT+06:00" duration-ms="2482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:01:43 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T11:01:58 GMT+06:00" duration-ms="15138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:01:58 GMT+06:00" name="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule" description="Verify cart behavior after logout and login matches configured business rule" finished-at="2026-08-19T11:02:11 GMT+06:00" duration-ms="13406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:02:11 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T11:02:16 GMT+06:00" duration-ms="4727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="initializeAddToCartPage()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:02:16 GMT+06:00" name="initializeAddToCartPage" finished-at="2026-08-19T11:02:34 GMT+06:00" duration-ms="17756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeAddToCartPage -->
+        <test-method signature="verifyAddProductToCartFromSearchResultAfterLoginAndSearch()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:02:34 GMT+06:00" name="verifyAddProductToCartFromSearchResultAfterLoginAndSearch" description="Verify first available dynamic search product can be opened and added to cart after login" finished-at="2026-08-19T11:14:30 GMT+06:00" duration-ms="715765" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[No purchasable product details page was found for search terms: [Vicks, Napa, a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: No purchasable product details page was found for search terms: [Vicks, Napa, a]
+at tests.user.AddProductToCartTest.addProductDetailsFromAvailableSearchTerm(AddProductToCartTest.java:685)
+at tests.user.AddProductToCartTest.verifyAddProductToCartFromSearchResultAfterLoginAndSearch(AddProductToCartTest.java:580)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.TimeoutException: Stopped product-details probing after 6 search-result candidates for keyword 'a'. Tried products: [Atova 10, Alatrol 10, Alcet, Clopid-AS, Angilock 50, ATV 10]
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '26.0.1'
+Driver info: driver.version: unknown
+at pages.user.AddProductToCartPage.selectFirstProductWithWorkingQuantitySelector(AddProductToCartPage.java:264)
+at tests.user.AddProductToCartTest.addProductDetailsFromAvailableSearchTerm(AddProductToCartTest.java:653)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshot captured: /Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/screenshots/verifyAddProductToCartFromSearchResultAfterLoginAndSearch_20260819_111430_182.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddProductToCartFromSearchResultAfterLoginAndSearch -->
+        <test-method is-config="true" signature="cleanCartAfterTest()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:14:30 GMT+06:00" name="cleanCartAfterTest" finished-at="2026-08-19T11:14:33 GMT+06:00" duration-ms="3437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AddProductToCartTest@1fa1cab1]" started-at="2026-08-19T11:14:33 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:14:33 GMT+06:00" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.AddProductToCartTest -->
+      <class name="tests.user.OrderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:14:33 GMT+06:00" name="setUp" finished-at="2026-08-19T11:14:35 GMT+06:00" duration-ms="1611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareCartForShippingAddressRegression(java.lang.reflect.Method)[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:14:35 GMT+06:00" name="prepareCartForShippingAddressRegression" finished-at="2026-08-19T11:14:52 GMT+06:00" duration-ms="17077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.user.OrderTest.verifyShippingAddressRegressionInsideCartDrawer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareCartForShippingAddressRegression -->
+        <test-method signature="verifyShippingAddressRegressionInsideCartDrawer()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:14:52 GMT+06:00" name="verifyShippingAddressRegressionInsideCartDrawer" description="Verify shipping address, coupon and checkout summary regression inside cart drawer" finished-at="2026-08-19T11:15:18 GMT+06:00" duration-ms="26473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShippingAddressRegressionInsideCartDrawer -->
+        <test-method is-config="true" signature="cleanCartAfterShippingAddressRegression()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:15:18 GMT+06:00" name="cleanCartAfterShippingAddressRegression" finished-at="2026-08-19T11:15:23 GMT+06:00" duration-ms="4690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterShippingAddressRegression -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:15:23 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:15:23 GMT+06:00" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:15:23 GMT+06:00" name="setUp" finished-at="2026-08-19T11:15:25 GMT+06:00" duration-ms="1873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="prepareCartForShippingAddressRegression(java.lang.reflect.Method)[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:15:25 GMT+06:00" name="prepareCartForShippingAddressRegression" finished-at="2026-08-19T11:15:52 GMT+06:00" duration-ms="26404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.user.OrderTest.verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareCartForShippingAddressRegression -->
+        <test-method signature="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:15:52 GMT+06:00" name="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression" description="Verify COD place order, confirmation, payment details and track order regression" finished-at="2026-08-19T11:18:08 GMT+06:00" duration-ms="136157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression -->
+        <test-method is-config="true" signature="cleanCartAfterShippingAddressRegression()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:18:08 GMT+06:00" name="cleanCartAfterShippingAddressRegression" finished-at="2026-08-19T11:18:12 GMT+06:00" duration-ms="4163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanCartAfterShippingAddressRegression -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.OrderTest@5b6ec132]" started-at="2026-08-19T11:18:12 GMT+06:00" name="tearDown" finished-at="2026-08-19T11:18:12 GMT+06:00" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.OrderTest -->
+      <class name="tests.user.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:12 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:19 GMT+06:00" duration-ms="6182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAllNavigationIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:19 GMT+06:00" name="verifyAllNavigationIcons" description="Verify all navigation icons" finished-at="2026-08-19T10:49:19 GMT+06:00" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllNavigationIcons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:19 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:19 GMT+06:00" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:19 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:20 GMT+06:00" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCategoryIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:20 GMT+06:00" name="verifyCategoryIcons" description="Verify category icons" finished-at="2026-08-19T10:49:21 GMT+06:00" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoryIcons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:21 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:21 GMT+06:00" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:21 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:22 GMT+06:00" duration-ms="1182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFooterIcons()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:22 GMT+06:00" name="verifyFooterIcons" description="Verify footer icons" finished-at="2026-08-19T10:49:22 GMT+06:00" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterIcons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:22 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:22 GMT+06:00" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:22 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:27 GMT+06:00" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHeaderLogo()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:27 GMT+06:00" name="verifyHeaderLogo" description="Verify header logo" finished-at="2026-08-19T10:49:27 GMT+06:00" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaderLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:27 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:27 GMT+06:00" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:27 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:39 GMT+06:00" duration-ms="11981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageLoads()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:39 GMT+06:00" name="verifyHomePageLoads" description="Verify Home page loads" finished-at="2026-08-19T10:49:39 GMT+06:00" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:39 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:39 GMT+06:00" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:39 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:40 GMT+06:00" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProfileAvatar()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:40 GMT+06:00" name="verifyProfileAvatar" description="Verify profile avatar" finished-at="2026-08-19T10:49:47 GMT+06:00" duration-ms="6620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProfileAvatar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.HomePageTest@172b013]" started-at="2026-08-19T10:49:47 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:47 GMT+06:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.HomePageTest -->
+      <class name="tests.user.SearchPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:53:27 GMT+06:00" name="setUp" finished-at="2026-08-19T10:53:34 GMT+06:00" duration-ms="7733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:53:34 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:53:43 GMT+06:00" duration-ms="8306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifyBackButtonIsVisibleAndFunctional()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:53:43 GMT+06:00" name="verifyBackButtonIsVisibleAndFunctional" description="Verify Search page back navigation" finished-at="2026-08-19T10:53:44 GMT+06:00" duration-ms="1009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBackButtonIsVisibleAndFunctional -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:53:44 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:53:57 GMT+06:00" duration-ms="13439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifyDynamicSearchShowsAutomaticResultsAfterTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:53:57 GMT+06:00" name="verifyDynamicSearchShowsAutomaticResultsAfterTyping" description="Verify typing dynamic keyword displays automatic results" finished-at="2026-08-19T10:54:08 GMT+06:00" duration-ms="11006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDynamicSearchShowsAutomaticResultsAfterTyping -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:54:08 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:54:28 GMT+06:00" duration-ms="19775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifyEmptySearchBehaviorAndRecentSearchClear()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:54:28 GMT+06:00" name="verifyEmptySearchBehaviorAndRecentSearchClear" description="Verify empty search behavior and recent search clear" finished-at="2026-08-19T10:54:50 GMT+06:00" duration-ms="22025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptySearchBehaviorAndRecentSearchClear -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:54:50 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:55:05 GMT+06:00" duration-ms="15190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifyNoResultsStateWhenNoMatchingProductsExist()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:05 GMT+06:00" name="verifyNoResultsStateWhenNoMatchingProductsExist" description="Verify No Results state" finished-at="2026-08-19T10:55:06 GMT+06:00" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoResultsStateWhenNoMatchingProductsExist -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:06 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:55:14 GMT+06:00" duration-ms="8568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifyScrollingLoadsAdditionalProducts()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:14 GMT+06:00" name="verifyScrollingLoadsAdditionalProducts" description="Verify scrolling loads additional products" finished-at="2026-08-19T10:55:15 GMT+06:00" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScrollingLoadsAdditionalProducts -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:15 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:55:27 GMT+06:00" duration-ms="11876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifySearchPageUiIntegrity()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:27 GMT+06:00" name="verifySearchPageUiIntegrity" description="Verify Search page UI integrity" finished-at="2026-08-19T10:55:28 GMT+06:00" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchPageUiIntegrity -->
+        <test-method is-config="true" signature="initializeSearchPage()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:28 GMT+06:00" name="initializeSearchPage" finished-at="2026-08-19T10:55:36 GMT+06:00" duration-ms="8158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSearchPage -->
+        <test-method signature="verifySearchSuggestionsAreDisplayedWhileTyping()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:36 GMT+06:00" name="verifySearchSuggestionsAreDisplayedWhileTyping" description="Verify search suggestions are displayed while typing" finished-at="2026-08-19T10:55:48 GMT+06:00" duration-ms="11011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchSuggestionsAreDisplayedWhileTyping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.SearchPageTest@b4711e2]" started-at="2026-08-19T10:55:48 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:55:48 GMT+06:00" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.SearchPageTest -->
+      <class name="tests.user.AuthenticationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:22 GMT+06:00" name="setUp" finished-at="2026-08-19T10:48:29 GMT+06:00" duration-ms="7509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogoutCancelKeepsSession()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:29 GMT+06:00" name="verifyLogoutCancelKeepsSession" description="Verify Logout Cancel keeps session" finished-at="2026-08-19T10:48:37 GMT+06:00" duration-ms="7987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutCancelKeepsSession -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:37 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:48:37 GMT+06:00" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:37 GMT+06:00" name="setUp" finished-at="2026-08-19T10:48:39 GMT+06:00" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogoutConfirmLogsOut()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:39 GMT+06:00" name="verifyLogoutConfirmLogsOut" description="Verify Logout Confirm logs out" finished-at="2026-08-19T10:48:47 GMT+06:00" duration-ms="8003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutConfirmLogsOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:47 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:48:47 GMT+06:00" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:47 GMT+06:00" name="setUp" finished-at="2026-08-19T10:48:48 GMT+06:00" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySessionPersistsAfterRefresh()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:48 GMT+06:00" name="verifySessionPersistsAfterRefresh" description="Verify session persists after refresh" finished-at="2026-08-19T10:48:56 GMT+06:00" duration-ms="7371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySessionPersistsAfterRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:56 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:48:56 GMT+06:00" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:56 GMT+06:00" name="setUp" finished-at="2026-08-19T10:48:57 GMT+06:00" duration-ms="1270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySuccessfulLoginRedirectsToHome()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:48:57 GMT+06:00" name="verifySuccessfulLoginRedirectsToHome" description="Verify successful login redirects to Home" finished-at="2026-08-19T10:49:04 GMT+06:00" duration-ms="7137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLoginRedirectsToHome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:49:04 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:04 GMT+06:00" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:49:04 GMT+06:00" name="setUp" finished-at="2026-08-19T10:49:06 GMT+06:00" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidOtpLogsInSuccessfully()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:49:06 GMT+06:00" name="verifyValidOtpLogsInSuccessfully" description="Verify valid OTP (1234) logs in successfully" finished-at="2026-08-19T10:49:12 GMT+06:00" duration-ms="6574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidOtpLogsInSuccessfully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.user.AuthenticationTest@46b61c56]" started-at="2026-08-19T10:49:12 GMT+06:00" name="tearDown" finished-at="2026-08-19T10:49:12 GMT+06:00" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.user.AuthenticationTest -->
+    </test> <!-- Serial Regression -->
+  </suite> <!-- Arogga Web Automation Suite -->
+</testng-results>

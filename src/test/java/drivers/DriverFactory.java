@@ -19,16 +19,6 @@ public final class DriverFactory {
 
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
 
-    // ============================================================
-    // HEADLESS MODE CONTROL
-    //
-    // true  = Run browser in Headless mode
-    // false = Run browser normally with UI
-    //
-    // Change ONLY this value when you want to switch the mode.
-    // ============================================================
-    private static final boolean HEADLESS = false;
-
     private DriverFactory() {
     }
 
@@ -89,7 +79,7 @@ public final class DriverFactory {
 
                 FirefoxOptions options = new FirefoxOptions();
 
-                if (HEADLESS) {
+                if (config.headless()) {
                     options.addArguments("-headless");
                     options.addArguments("--width=1440");
                     options.addArguments("--height=1200");
@@ -114,7 +104,7 @@ public final class DriverFactory {
                         createLoggingPreferences()
                 );
 
-                if (HEADLESS) {
+                if (config.headless()) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1440,1200");
                 }
@@ -135,13 +125,16 @@ public final class DriverFactory {
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--disable-gpu");
+                options.addArguments("--disable-background-timer-throttling");
+                options.addArguments("--disable-backgrounding-occluded-windows");
+                options.addArguments("--disable-renderer-backgrounding");
 
                 options.setCapability(
                         "goog:loggingPrefs",
                         createLoggingPreferences()
                 );
 
-                if (HEADLESS) {
+                if (config.headless()) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1440,1200");
                 }

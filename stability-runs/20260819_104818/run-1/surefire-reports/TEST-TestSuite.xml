@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="1954.772" tests="71" errors="0" skipped="2" failures="1">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="webdriver.chrome.driver" value="/Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/test-classes:/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/classes:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-java/4.34.0/selenium-java-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-api/4.34.0/selenium-api-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.34.0/selenium-chrome-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.34.0/selenium-chromium-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-json/4.34.0/selenium-json-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.34.0/selenium-manager-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.34.0/selenium-devtools-v136-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.34.0/selenium-devtools-v137-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.34.0/selenium-devtools-v138-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.34.0/selenium-edge-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.34.0/selenium-firefox-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-http/4.34.0/selenium-http-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.34.0/selenium-ie-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.34.0/selenium-remote-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-api/1.51.0/opentelemetry-api-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-context/1.51.0/opentelemetry-context-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.51.0/opentelemetry-exporter-logging-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.51.0/opentelemetry-sdk-common-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.51.0/opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.51.0/opentelemetry-sdk-extension-autoconfigure-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.51.0/opentelemetry-sdk-trace-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.51.0/opentelemetry-sdk-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.51.0/opentelemetry-sdk-metrics-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.51.0/opentelemetry-sdk-logs-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-os/4.34.0/selenium-os-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.34.0/selenium-safari-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-support/4.34.0/selenium-support-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/errorprone/error_prone_annotations/2.37.0/error_prone_annotations-2.37.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi-ooxml/5.4.1/poi-ooxml-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi/5.4.1/poi-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi-ooxml-lite/5.4.1/poi-ooxml-lite-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Dhaka"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BD"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/26.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/surefire/surefirebooter-20260819104821671_3.jar /Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/surefire 2026-08-19T10-48-21_609-jvmRun1 surefire-20260819104821671_1tmp surefire_0-20260819104821671_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/test-classes:/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/classes:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-java/4.34.0/selenium-java-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-api/4.34.0/selenium-api-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.34.0/selenium-chrome-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.34.0/selenium-chromium-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-json/4.34.0/selenium-json-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.34.0/selenium-manager-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.34.0/selenium-devtools-v136-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.34.0/selenium-devtools-v137-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.34.0/selenium-devtools-v138-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.34.0/selenium-edge-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.34.0/selenium-firefox-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-http/4.34.0/selenium-http-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.34.0/selenium-ie-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.34.0/selenium-remote-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-api/1.51.0/opentelemetry-api-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-context/1.51.0/opentelemetry-context-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.51.0/opentelemetry-exporter-logging-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.51.0/opentelemetry-sdk-common-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.51.0/opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.51.0/opentelemetry-sdk-extension-autoconfigure-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.51.0/opentelemetry-sdk-trace-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.51.0/opentelemetry-sdk-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.51.0/opentelemetry-sdk-metrics-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.51.0/opentelemetry-sdk-logs-1.51.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-os/4.34.0/selenium-os-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.34.0/selenium-safari-driver-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/seleniumhq/selenium/selenium-support/4.34.0/selenium-support-4.34.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/github/bonigarcia/webdrivermanager/6.1.0/webdrivermanager-6.1.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/code/gson/gson/2.13.0/gson-2.13.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/google/errorprone/error_prone_annotations/2.37.0/error_prone_annotations-2.37.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java/3.5.0/docker-java-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-core/3.5.0/docker-java-core-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-api/3.5.0/docker-java-api-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.5.0/docker-java-transport-httpclient5-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/docker-java/docker-java-transport/3.5.0/docker-java-transport-3.5.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi-ooxml/5.4.1/poi-ooxml-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi/5.4.1/poi-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/poi/poi-ooxml-lite/5.4.1/poi-ooxml-lite-5.4.1.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/Ainul/kazimdshimulbillah/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/Ainul/kazimdshimulbillah"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/26.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/surefire/surefirebooter-20260819104821671_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="26.0.1"/>
+    <property name="user.name" value="kazimdshimulbillah"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/Ainul/kazimdshimulbillah/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/c0/0w6k5qhj3073qbksf325k5kw0000gn/T/"/>
+    <property name="java.version" value="26.0.1"/>
+    <property name="user.dir" value="/Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Ainul/kazimdshimulbillah/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="26.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="70.0"/>
+  </properties>
+  <testcase name="verifyLogoutCancelKeepsSession" classname="tests.user.AuthenticationTest" time="7.825">
+    <system-out><![CDATA[2026-08-19 10:48:27 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:48:27 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:48:30 INFO  [main] TestListener - Starting test: verifyLogoutCancelKeepsSession
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:48:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:48:29 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLogoutConfirmLogsOut" classname="tests.user.AuthenticationTest" time="8.003">
+    <system-out><![CDATA[2026-08-19 10:48:37 INFO  [main] TestListener - Test passed: verifyLogoutCancelKeepsSession
+2026-08-19 10:48:38 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:48:38 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:48:39 INFO  [main] TestListener - Starting test: verifyLogoutConfirmLogsOut
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:48:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:48:38 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySessionPersistsAfterRefresh" classname="tests.user.AuthenticationTest" time="7.371">
+    <system-out><![CDATA[2026-08-19 10:48:47 INFO  [main] TestListener - Test passed: verifyLogoutConfirmLogsOut
+2026-08-19 10:48:47 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:48:47 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:48:48 INFO  [main] TestListener - Starting test: verifySessionPersistsAfterRefresh
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:48:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:48:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySuccessfulLoginRedirectsToHome" classname="tests.user.AuthenticationTest" time="7.135">
+    <system-out><![CDATA[2026-08-19 10:48:56 INFO  [main] TestListener - Test passed: verifySessionPersistsAfterRefresh
+2026-08-19 10:48:56 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:48:56 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:48:57 INFO  [main] TestListener - Starting test: verifySuccessfulLoginRedirectsToHome
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:48:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:48:56 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyValidOtpLogsInSuccessfully" classname="tests.user.AuthenticationTest" time="6.574">
+    <system-out><![CDATA[2026-08-19 10:49:04 INFO  [main] TestListener - Test passed: verifySuccessfulLoginRedirectsToHome
+2026-08-19 10:49:04 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:04 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:06 INFO  [main] TestListener - Starting test: verifyValidOtpLogsInSuccessfully
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyAllNavigationIcons" classname="tests.user.HomePageTest" time="0.117">
+    <system-out><![CDATA[2026-08-19 10:49:12 INFO  [main] TestListener - Test passed: verifyValidOtpLogsInSuccessfully
+2026-08-19 10:49:12 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:12 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:19 INFO  [main] TestListener - Starting test: verifyAllNavigationIcons
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:13 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCategoryIcons" classname="tests.user.HomePageTest" time="0.273">
+    <system-out><![CDATA[2026-08-19 10:49:19 INFO  [main] TestListener - Test passed: verifyAllNavigationIcons
+2026-08-19 10:49:19 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:19 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:20 INFO  [main] TestListener - Starting test: verifyCategoryIcons
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:20 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyFooterIcons" classname="tests.user.HomePageTest" time="0.359">
+    <system-out><![CDATA[2026-08-19 10:49:21 INFO  [main] TestListener - Test passed: verifyCategoryIcons
+2026-08-19 10:49:21 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:21 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:22 INFO  [main] TestListener - Starting test: verifyFooterIcons
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyHeaderLogo" classname="tests.user.HomePageTest" time="0.06">
+    <system-out><![CDATA[2026-08-19 10:49:22 INFO  [main] TestListener - Test passed: verifyFooterIcons
+2026-08-19 10:49:22 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:22 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:27 INFO  [main] TestListener - Starting test: verifyHeaderLogo
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyHomePageLoads" classname="tests.user.HomePageTest" time="0.041">
+    <system-out><![CDATA[2026-08-19 10:49:27 INFO  [main] TestListener - Test passed: verifyHeaderLogo
+2026-08-19 10:49:27 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:27 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:37 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:37 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:39 INFO  [main] TestListener - Starting test: verifyHomePageLoads
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:28 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Aug 19, 2026 10:49:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:37 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProfileAvatar" classname="tests.user.HomePageTest" time="6.619">
+    <system-out><![CDATA[2026-08-19 10:49:39 INFO  [main] TestListener - Test passed: verifyHomePageLoads
+2026-08-19 10:49:39 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:39 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:40 INFO  [main] TestListener - Starting test: verifyProfileAvatar
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:40 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin" classname="tests.user.LoginTest" time="7.867">
+    <system-out><![CDATA[2026-08-19 10:49:47 INFO  [main] TestListener - Test passed: verifyProfileAvatar
+2026-08-19 10:49:47 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:47 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:49 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:49 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:49:51 INFO  [main] TestListener - Starting test: verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Aug 19, 2026 10:49:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage" classname="tests.user.LoginTest" time="2.172">
+    <system-out><![CDATA[2026-08-19 10:49:58 INFO  [main] TestListener - Test passed: verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin
+2026-08-19 10:49:59 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:49:59 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:00 INFO  [main] TestListener - Starting test: verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:49:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:49:59 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage" classname="tests.user.LoginTest" time="1.681">
+    <system-out><![CDATA[2026-08-19 10:50:02 INFO  [main] TestListener - Test passed: verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage
+2026-08-19 10:50:03 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:03 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:05 INFO  [main] TestListener - Starting test: verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:03 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyEmptyPhoneNumberValidation" classname="tests.user.LoginTest" time="0.862">
+    <system-out><![CDATA[2026-08-19 10:50:06 INFO  [main] TestListener - Test passed: verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage
+2026-08-19 10:50:06 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:06 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:08 INFO  [main] TestListener - Starting test: verifyEmptyPhoneNumberValidation
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:07 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyExpiredOtpShowsProperValidationMessage" classname="tests.user.LoginTest" time="0.0">
+    <skipped message="OTP expiry is disabled for this test environment."/>
+    <system-out><![CDATA[2026-08-19 10:50:09 INFO  [main] TestListener - Test passed: verifyEmptyPhoneNumberValidation
+2026-08-19 10:50:09 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:09 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:11 INFO  [main] TestListener - Starting test: verifyExpiredOtpShowsProperValidationMessage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyGoogleLoginButton" classname="tests.user.LoginTest" time="0.8">
+    <system-out><![CDATA[2026-08-19 10:50:11 WARN  [main] TestListener - Test skipped: verifyExpiredOtpShowsProperValidationMessage
+2026-08-19 10:50:11 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:11 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:16 INFO  [main] TestListener - Starting test: verifyGoogleLoginButton
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:11 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyIncorrectOtpCannotCompleteLogin" classname="tests.user.LoginTest" time="6.969">
+    <system-out><![CDATA[2026-08-19 10:50:17 INFO  [main] TestListener - Test passed: verifyGoogleLoginButton
+2026-08-19 10:50:17 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:17 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:19 INFO  [main] TestListener - Starting test: verifyIncorrectOtpCannotCompleteLogin
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyInvalidOtpShowsProperValidationMessage" classname="tests.user.LoginTest" time="6.94">
+    <system-out><![CDATA[2026-08-19 10:50:26 INFO  [main] TestListener - Test passed: verifyIncorrectOtpCannotCompleteLogin
+2026-08-19 10:50:26 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:26 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:27 INFO  [main] TestListener - Starting test: verifyInvalidOtpShowsProperValidationMessage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:26 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyInvalidPhoneLengthValidation" classname="tests.user.LoginTest" time="0.904">
+    <system-out><![CDATA[2026-08-19 10:50:34 INFO  [main] TestListener - Test passed: verifyInvalidOtpShowsProperValidationMessage
+2026-08-19 10:50:34 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:34 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:37 INFO  [main] TestListener - Starting test: verifyInvalidPhoneLengthValidation
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:35 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLinkedInLoginButton" classname="tests.user.LoginTest" time="0.774">
+    <system-out><![CDATA[2026-08-19 10:50:38 INFO  [main] TestListener - Test passed: verifyInvalidPhoneLengthValidation
+2026-08-19 10:50:38 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:38 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:40 INFO  [main] TestListener - Starting test: verifyLinkedInLoginButton
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLoginPageLoadsSuccessfully" classname="tests.user.LoginTest" time="0.854">
+    <system-out><![CDATA[2026-08-19 10:50:41 INFO  [main] TestListener - Test passed: verifyLinkedInLoginButton
+2026-08-19 10:50:41 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:41 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:42 INFO  [main] TestListener - Starting test: verifyLoginPageLoadsSuccessfully
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:41 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLoginSessionRemainsActiveAfterPageRefresh" classname="tests.user.LoginTest" time="7.319">
+    <system-out><![CDATA[2026-08-19 10:50:43 INFO  [main] TestListener - Test passed: verifyLoginPageLoadsSuccessfully
+2026-08-19 10:50:43 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:43 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:45 INFO  [main] TestListener - Starting test: verifyLoginSessionRemainsActiveAfterPageRefresh
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyLogoutFunctionality" classname="tests.user.LoginTest" time="9.259">
+    <system-out><![CDATA[2026-08-19 10:50:52 INFO  [main] TestListener - Test passed: verifyLoginSessionRemainsActiveAfterPageRefresh
+2026-08-19 10:50:53 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:50:53 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:50:54 INFO  [main] TestListener - Starting test: verifyLogoutFunctionality
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:50:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:50:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyNonNumericCharactersValidation" classname="tests.user.LoginTest" time="0.871">
+    <system-out><![CDATA[2026-08-19 10:51:04 INFO  [main] TestListener - Test passed: verifyLogoutFunctionality
+2026-08-19 10:51:04 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:04 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:05 INFO  [main] TestListener - Starting test: verifyNonNumericCharactersValidation
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:04 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOtpInputAcceptsOnlyNumericValues" classname="tests.user.LoginTest" time="1.018">
+    <system-out><![CDATA[2026-08-19 10:51:06 INFO  [main] TestListener - Test passed: verifyNonNumericCharactersValidation
+2026-08-19 10:51:06 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:06 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:08 INFO  [main] TestListener - Starting test: verifyOtpInputAcceptsOnlyNumericValues
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:07 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOtpInputFieldIsDisplayedAfterClickingSend" classname="tests.user.LoginTest" time="1.458">
+    <system-out><![CDATA[2026-08-19 10:51:09 INFO  [main] TestListener - Test passed: verifyOtpInputAcceptsOnlyNumericValues
+2026-08-19 10:51:09 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:09 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:11 INFO  [main] TestListener - Starting test: verifyOtpInputFieldIsDisplayedAfterClickingSend
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOtpLengthValidation" classname="tests.user.LoginTest" time="6.963">
+    <system-out><![CDATA[2026-08-19 10:51:13 INFO  [main] TestListener - Test passed: verifyOtpInputFieldIsDisplayedAfterClickingSend
+2026-08-19 10:51:13 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:13 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:14 INFO  [main] TestListener - Starting test: verifyOtpLengthValidation
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:13 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPhoneNumberFieldIsDisplayed" classname="tests.user.LoginTest" time="0.25">
+    <system-out><![CDATA[2026-08-19 10:51:21 INFO  [main] TestListener - Test passed: verifyOtpLengthValidation
+2026-08-19 10:51:22 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:22 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:23 INFO  [main] TestListener - Starting test: verifyPhoneNumberFieldIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:22 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPrivacyPolicyLinkIsDisplayed" classname="tests.user.LoginTest" time="0.745">
+    <system-out><![CDATA[2026-08-19 10:51:24 INFO  [main] TestListener - Test passed: verifyPhoneNumberFieldIsDisplayed
+2026-08-19 10:51:24 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:24 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:25 INFO  [main] TestListener - Starting test: verifyPrivacyPolicyLinkIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:24 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPrivacyPolicyLinkOpensCorrectPage" classname="tests.user.LoginTest" time="1.486">
+    <system-out><![CDATA[2026-08-19 10:51:26 INFO  [main] TestListener - Test passed: verifyPrivacyPolicyLinkIsDisplayed
+2026-08-19 10:51:26 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:26 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:28 INFO  [main] TestListener - Starting test: verifyPrivacyPolicyLinkOpensCorrectPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:27 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRefundReturnPolicyLinkIsDisplayed" classname="tests.user.LoginTest" time="0.826">
+    <system-out><![CDATA[2026-08-19 10:51:29 INFO  [main] TestListener - Test passed: verifyPrivacyPolicyLinkOpensCorrectPage
+2026-08-19 10:51:29 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:29 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:31 INFO  [main] TestListener - Starting test: verifyRefundReturnPolicyLinkIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:30 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRefundReturnPolicyLinkOpensCorrectPage" classname="tests.user.LoginTest" time="1.437">
+    <system-out><![CDATA[2026-08-19 10:51:32 INFO  [main] TestListener - Test passed: verifyRefundReturnPolicyLinkIsDisplayed
+2026-08-19 10:51:32 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:32 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:34 INFO  [main] TestListener - Starting test: verifyRefundReturnPolicyLinkOpensCorrectPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyResendOtpButtonIsDisplayed" classname="tests.user.LoginTest" time="31.106">
+    <system-out><![CDATA[2026-08-19 10:51:35 INFO  [main] TestListener - Test passed: verifyRefundReturnPolicyLinkOpensCorrectPage
+2026-08-19 10:51:35 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:51:35 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:51:37 INFO  [main] TestListener - Starting test: verifyResendOtpButtonIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:51:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:51:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySendButtonEnabledAfterValidPhone" classname="tests.user.LoginTest" time="0.926">
+    <system-out><![CDATA[2026-08-19 10:52:08 INFO  [main] TestListener - Test passed: verifyResendOtpButtonIsDisplayed
+2026-08-19 10:52:10 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:10 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:12 INFO  [main] TestListener - Starting test: verifySendButtonEnabledAfterValidPhone
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:11 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySendButtonIsDisplayed" classname="tests.user.LoginTest" time="0.807">
+    <system-out><![CDATA[2026-08-19 10:52:13 INFO  [main] TestListener - Test passed: verifySendButtonEnabledAfterValidPhone
+2026-08-19 10:52:13 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:13 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:15 INFO  [main] TestListener - Starting test: verifySendButtonIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp" classname="tests.user.LoginTest" time="6.534">
+    <system-out><![CDATA[2026-08-19 10:52:16 INFO  [main] TestListener - Test passed: verifySendButtonIsDisplayed
+2026-08-19 10:52:16 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:16 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:18 INFO  [main] TestListener - Starting test: verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:16 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTermsAndConditionsLinkIsDisplayed" classname="tests.user.LoginTest" time="0.337">
+    <system-out><![CDATA[2026-08-19 10:52:24 INFO  [main] TestListener - Test passed: verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp
+2026-08-19 10:52:24 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:24 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:26 INFO  [main] TestListener - Starting test: verifyTermsAndConditionsLinkIsDisplayed
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTermsAndConditionsLinkOpensCorrectPage" classname="tests.user.LoginTest" time="1.374">
+    <system-out><![CDATA[2026-08-19 10:52:26 INFO  [main] TestListener - Test passed: verifyTermsAndConditionsLinkIsDisplayed
+2026-08-19 10:52:26 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:26 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:28 INFO  [main] TestListener - Starting test: verifyTermsAndConditionsLinkOpensCorrectPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:27 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanLoginAgainAfterLogout" classname="tests.user.LoginTest" time="14.827">
+    <system-out><![CDATA[2026-08-19 10:52:30 INFO  [main] TestListener - Test passed: verifyTermsAndConditionsLinkOpensCorrectPage
+2026-08-19 10:52:30 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:30 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:32 INFO  [main] TestListener - Starting test: verifyUserCanLoginAgainAfterLogout
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserProfileAccountIconIsDisplayedAfterLogin" classname="tests.user.LoginTest" time="7.569">
+    <system-out><![CDATA[2026-08-19 10:52:47 INFO  [main] TestListener - Test passed: verifyUserCanLoginAgainAfterLogout
+2026-08-19 10:52:47 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:47 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:49 INFO  [main] TestListener - Starting test: verifyUserProfileAccountIconIsDisplayedAfterLogin
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserRedirectedToHomePageAfterSuccessfulLogin" classname="tests.user.LoginTest" time="6.979">
+    <system-out><![CDATA[2026-08-19 10:52:56 INFO  [main] TestListener - Test passed: verifyUserProfileAccountIconIsDisplayedAfterLogin
+2026-08-19 10:52:56 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:52:56 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:52:58 INFO  [main] TestListener - Starting test: verifyUserRedirectedToHomePageAfterSuccessfulLogin
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:52:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:52:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyValidPhoneNumberCanBeEntered" classname="tests.user.LoginTest" time="0.935">
+    <system-out><![CDATA[2026-08-19 10:53:05 INFO  [main] TestListener - Test passed: verifyUserRedirectedToHomePageAfterSuccessfulLogin
+2026-08-19 10:53:05 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:05 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:07 INFO  [main] TestListener - Starting test: verifyValidPhoneNumberCanBeEntered
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:06 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyClickingSendOpensOtpPage" classname="tests.user.OtpTest" time="0.935">
+    <system-out><![CDATA[2026-08-19 10:53:08 INFO  [main] TestListener - Test passed: verifyValidPhoneNumberCanBeEntered
+2026-08-19 10:53:08 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:08 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:10 INFO  [main] TestListener - Starting test: verifyClickingSendOpensOtpPage
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:09 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyInvalidOtpError" classname="tests.user.OtpTest" time="6.474">
+    <system-out><![CDATA[2026-08-19 10:53:11 INFO  [main] TestListener - Test passed: verifyClickingSendOpensOtpPage
+2026-08-19 10:53:11 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:11 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:12 INFO  [main] TestListener - Starting test: verifyInvalidOtpError
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:11 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOtpExpiry" classname="tests.user.OtpTest" time="0.0">
+    <skipped message="OTP expiry is disabled for this test environment."/>
+    <system-out><![CDATA[2026-08-19 10:53:19 INFO  [main] TestListener - Test passed: verifyInvalidOtpError
+2026-08-19 10:53:19 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:19 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:20 INFO  [main] TestListener - Starting test: verifyOtpExpiry
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:19 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyOtpPageLoads" classname="tests.user.OtpTest" time="0.939">
+    <system-out><![CDATA[2026-08-19 10:53:20 WARN  [main] TestListener - Test skipped: verifyOtpExpiry
+2026-08-19 10:53:20 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:20 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:21 INFO  [main] TestListener - Starting test: verifyOtpPageLoads
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyReferralCodeAccordion" classname="tests.user.OtpTest" time="0.268">
+    <system-out><![CDATA[2026-08-19 10:53:22 INFO  [main] TestListener - Test passed: verifyOtpPageLoads
+2026-08-19 10:53:22 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:22 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:24 INFO  [main] TestListener - Starting test: verifyReferralCodeAccordion
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUpdatePhoneNumber" classname="tests.user.OtpTest" time="1.056">
+    <system-out><![CDATA[2026-08-19 10:53:24 INFO  [main] TestListener - Test passed: verifyReferralCodeAccordion
+2026-08-19 10:53:24 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:24 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:25 INFO  [main] TestListener - Starting test: verifyUpdatePhoneNumber
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyBackButtonIsVisibleAndFunctional" classname="tests.user.SearchPageTest" time="1.009">
+    <system-out><![CDATA[2026-08-19 10:53:26 INFO  [main] TestListener - Test passed: verifyUpdatePhoneNumber
+2026-08-19 10:53:27 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:27 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:34 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:34 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:43 INFO  [main] TestListener - Starting test: verifyBackButtonIsVisibleAndFunctional
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:27 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Aug 19, 2026 10:53:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:35 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicSearchShowsAutomaticResultsAfterTyping" classname="tests.user.SearchPageTest" time="11.005">
+    <system-out><![CDATA[2026-08-19 10:53:44 INFO  [main] TestListener - Test passed: verifyBackButtonIsVisibleAndFunctional
+2026-08-19 10:53:44 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:53:44 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:53:57 INFO  [main] TestListener - Starting test: verifyDynamicSearchShowsAutomaticResultsAfterTyping
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:53:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:53:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyEmptySearchBehaviorAndRecentSearchClear" classname="tests.user.SearchPageTest" time="22.025">
+    <system-out><![CDATA[2026-08-19 10:54:08 INFO  [main] TestListener - Test passed: verifyDynamicSearchShowsAutomaticResultsAfterTyping
+2026-08-19 10:54:20 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:54:20 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:54:28 INFO  [main] TestListener - Starting test: verifyEmptySearchBehaviorAndRecentSearchClear
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:54:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:54:20 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyNoResultsStateWhenNoMatchingProductsExist" classname="tests.user.SearchPageTest" time="0.705">
+    <system-out><![CDATA[2026-08-19 10:54:50 INFO  [main] TestListener - Test passed: verifyEmptySearchBehaviorAndRecentSearchClear
+2026-08-19 10:54:56 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:54:56 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:55:05 INFO  [main] TestListener - Starting test: verifyNoResultsStateWhenNoMatchingProductsExist
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:54:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:54:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyScrollingLoadsAdditionalProducts" classname="tests.user.SearchPageTest" time="0.75">
+    <system-out><![CDATA[2026-08-19 10:55:06 INFO  [main] TestListener - Test passed: verifyNoResultsStateWhenNoMatchingProductsExist
+2026-08-19 10:55:06 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:55:06 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:55:14 INFO  [main] TestListener - Starting test: verifyScrollingLoadsAdditionalProducts
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:55:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:55:06 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySearchPageUiIntegrity" classname="tests.user.SearchPageTest" time="1.403">
+    <system-out><![CDATA[2026-08-19 10:55:15 INFO  [main] TestListener - Test passed: verifyScrollingLoadsAdditionalProducts
+2026-08-19 10:55:15 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:55:15 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:55:27 INFO  [main] TestListener - Starting test: verifySearchPageUiIntegrity
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:55:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:55:16 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySearchSuggestionsAreDisplayedWhileTyping" classname="tests.user.SearchPageTest" time="11.013">
+    <system-out><![CDATA[2026-08-19 10:55:28 INFO  [main] TestListener - Test passed: verifySearchPageUiIntegrity
+2026-08-19 10:55:28 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:55:28 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:55:36 INFO  [main] TestListener - Starting test: verifySearchSuggestionsAreDisplayedWhileTyping
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:55:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:55:29 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors" classname="tests.user.AddProductToCartTest" time="3.68">
+    <system-out><![CDATA[2026-08-19 10:55:48 INFO  [main] TestListener - Test passed: verifySearchSuggestionsAreDisplayedWhileTyping
+2026-08-19 10:55:48 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:55:48 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:55:56 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:55:56 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:56:11 INFO  [main] TestListener - Starting test: verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:55:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:55:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Aug 19, 2026 10:55:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:55:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicProductCardContentAssetsAndAlignment" classname="tests.user.AddProductToCartTest" time="0.115">
+    <system-out><![CDATA[2026-08-19 10:56:14 INFO  [main] TestListener - Test passed: verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors
+2026-08-19 10:56:32 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:56:32 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:56:47 INFO  [main] TestListener - Starting test: verifyDynamicProductCardContentAssetsAndAlignment
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:56:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:56:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting" classname="tests.user.AddProductToCartTest" time="1.182">
+    <system-out><![CDATA[2026-08-19 10:56:47 INFO  [main] TestListener - Test passed: verifyDynamicProductCardContentAssetsAndAlignment
+2026-08-19 10:56:50 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:56:50 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:57:04 INFO  [main] TestListener - Starting test: verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:56:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:56:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicAddButtonSelectorAndToastLifecycle" classname="tests.user.AddProductToCartTest" time="6.338">
+    <system-out><![CDATA[2026-08-19 10:57:05 INFO  [main] TestListener - Test passed: verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting
+2026-08-19 10:57:27 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:57:27 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:57:41 INFO  [main] TestListener - Starting test: verifyDynamicAddButtonSelectorAndToastLifecycle
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:57:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:57:28 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicProductAddToCartAndQuantityState" classname="tests.user.AddProductToCartTest" time="7.105">
+    <system-out><![CDATA[2026-08-19 10:57:48 INFO  [main] TestListener - Test passed: verifyDynamicAddButtonSelectorAndToastLifecycle
+2026-08-19 10:58:03 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:58:03 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:58:16 INFO  [main] TestListener - Starting test: verifyDynamicProductAddToCartAndQuantityState
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:58:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:58:04 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyDynamicCartPagePriceCalculationAndRefreshPersistence" classname="tests.user.AddProductToCartTest" time="30.476">
+    <system-out><![CDATA[2026-08-19 10:58:23 INFO  [main] TestListener - Test passed: verifyDynamicProductAddToCartAndQuantityState
+2026-08-19 10:58:40 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:58:40 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:58:55 INFO  [main] TestListener - Starting test: verifyDynamicCartPagePriceCalculationAndRefreshPersistence
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:58:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:58:41 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests" classname="tests.user.AddProductToCartTest" time="2.93">
+    <system-out><![CDATA[2026-08-19 10:59:25 INFO  [main] TestListener - Test passed: verifyDynamicCartPagePriceCalculationAndRefreshPersistence
+2026-08-19 10:59:30 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 10:59:30 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 10:59:46 INFO  [main] TestListener - Starting test: verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 10:59:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 10:59:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyQuantitySelectionAndRemoveProduct" classname="tests.user.AddProductToCartTest" time="32.748">
+    <system-out><![CDATA[2026-08-19 10:59:49 INFO  [main] TestListener - Test passed: verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests
+2026-08-19 11:00:07 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:00:07 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:00:52 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:00:52 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:01:08 INFO  [main] TestListener - Starting test: verifyQuantitySelectionAndRemoveProduct
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:00:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:00:08 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Aug 19, 2026 11:00:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:00:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule" classname="tests.user.AddProductToCartTest" time="13.406">
+    <system-out><![CDATA[2026-08-19 11:01:40 INFO  [main] TestListener - Test passed: verifyQuantitySelectionAndRemoveProduct
+2026-08-19 11:01:43 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:01:43 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:01:58 INFO  [main] TestListener - Starting test: verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:01:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:01:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyAddProductToCartFromSearchResultAfterLoginAndSearch" classname="tests.user.AddProductToCartTest" time="715.771">
+    <failure message="No purchasable product details page was found for search terms: [Vicks, Napa, a]" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: No purchasable product details page was found for search terms: [Vicks, Napa, a]
+	at tests.user.AddProductToCartTest.addProductDetailsFromAvailableSearchTerm(AddProductToCartTest.java:685)
+	at tests.user.AddProductToCartTest.verifyAddProductToCartFromSearchResultAfterLoginAndSearch(AddProductToCartTest.java:580)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.TimeoutException: Stopped product-details probing after 6 search-result candidates for keyword 'a'. Tried products: [Atova 10, Alatrol 10, Alcet, Clopid-AS, Angilock 50, ATV 10]
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '26.0.1'
+Driver info: driver.version: unknown
+	at pages.user.AddProductToCartPage.selectFirstProductWithWorkingQuantitySelector(AddProductToCartPage.java:264)
+	at tests.user.AddProductToCartTest.addProductDetailsFromAvailableSearchTerm(AddProductToCartTest.java:653)
+	... 31 more
+]]></failure>
+    <system-out><![CDATA[2026-08-19 11:02:11 INFO  [main] TestListener - Test passed: verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule
+2026-08-19 11:02:20 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:02:20 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:02:34 INFO  [main] TestListener - Starting test: verifyAddProductToCartFromSearchResultAfterLoginAndSearch
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:02:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:02:20 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyShippingAddressRegressionInsideCartDrawer" classname="tests.user.OrderTest" time="26.475">
+    <system-out><![CDATA[2026-08-19 11:14:30 ERROR [main] TestListener - Screenshot captured for failed test verifyAddProductToCartFromSearchResultAfterLoginAndSearch: /Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/screenshots/verifyAddProductToCartFromSearchResultAfterLoginAndSearch_20260819_111430_182.png
+Screenshot captured: /Users/Ainul/kazimdshimulbillah/Documents/Automation/arogga-automation/target/screenshots/verifyAddProductToCartFromSearchResultAfterLoginAndSearch_20260819_111430_182.png
+2026-08-19 11:14:33 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:14:33 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:14:52 INFO  [main] TestListener - Starting test: verifyShippingAddressRegressionInsideCartDrawer
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:14:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:14:34 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression" classname="tests.user.OrderTest" time="136.156">
+    <system-out><![CDATA[2026-08-19 11:15:18 INFO  [main] TestListener - Test passed: verifyShippingAddressRegressionInsideCartDrawer
+2026-08-19 11:15:23 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:15:23 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:15:52 INFO  [main] TestListener - Starting test: verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:15:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:15:24 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyAdminCanLoginSearchAndConfirmGeneratedOrder" classname="tests.admin.AdminOrderConfirmationTest" time="7.464">
+    <system-out><![CDATA[2026-08-19 11:18:08 INFO  [main] TestListener - Test passed: verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression
+2026-08-19 11:18:12 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:18:12 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:18:15 INFO  [main] TestListener - Starting test: verifyAdminCanLoginSearchAndConfirmGeneratedOrder
+2026-08-19 11:18:15 INFO  [main] AdminOrderConfirmationTest - Opening Admin login page for generated order 5436499
+2026-08-19 11:18:18 INFO  [main] AdminOrderConfirmationTest - Searching generated order 5436499 in Admin Orders page
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:18:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:18:13 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyNoUnexpectedUiChangesAfterDeployment" classname="tests.user.VisualRegressionTest" time="0.296">
+    <system-out><![CDATA[2026-08-19 11:18:22 INFO  [main] TestListener - Test passed: verifyAdminCanLoginSearchAndConfirmGeneratedOrder
+2026-08-19 11:18:22 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:18:22 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:18:24 INFO  [main] TestListener - Starting test: verifyNoUnexpectedUiChangesAfterDeployment
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:18:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:18:23 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyShipmentProcessingForConfirmedGeneratedOrder" classname="tests.admin.ShipmentProcessingTest" time="150.543">
+    <system-out><![CDATA[2026-08-19 11:18:24 INFO  [main] TestListener - Test passed: verifyNoUnexpectedUiChangesAfterDeployment
+2026-08-19 11:18:24 INFO  [main] WebDriverManager - Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2026-08-19 11:18:24 INFO  [main] WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ainul/kazimdshimulbillah/.cache/selenium/chromedriver/mac-arm64/151.0.7922.138/chromedriver
+2026-08-19 11:18:25 INFO  [main] TestListener - Starting test: verifyShipmentProcessingForConfirmedGeneratedOrder
+2026-08-19 11:18:25 INFO  [main] ShipmentProcessingTest - Opening Admin dashboard to process shipment for confirmed order 5436499
+2026-08-19 11:18:28 INFO  [main] ShipmentProcessingTest - Executing createShipment cron from SA Settings
+2026-08-19 11:20:12 INFO  [main] ShipmentProcessingTest - Searching confirmed order 5436499 and loading shipment information
+2026-08-19 11:20:55 INFO  [main] ShipmentProcessingTest - Opening shipment details for shipment 5436499A
+2026-08-19 11:20:56 INFO  [main] ShipmentProcessingTest - Verifying shipment tracking timeline for shipment 5436499A
+]]></system-out>
+    <system-err><![CDATA[Aug 19, 2026 11:18:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 151
+Aug 19, 2026 11:18:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 151.0.7922.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

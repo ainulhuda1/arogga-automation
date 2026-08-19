@@ -208,12 +208,15 @@ public class AddProductToCartPage extends SearchPage {
                 }
 
                 attemptedProductNames.add(product.productName());
-                if (tryOpenQuantitySelectorFor(product.productName())) {
+                String probeFailure = quantitySelectorProbeFailure(product.productName());
+                if (probeFailure.isBlank()) {
                     TestContext.setSelectedProductName(product.productName());
                     reloadSearchResults(searchText);
                     return product;
                 }
 
+                attemptedProductNames.set(attemptedProductNames.size() - 1,
+                        product.productName() + " [" + probeFailure + "]");
                 reloadSearchResults(searchText);
             }
 
@@ -267,7 +270,10 @@ public class AddProductToCartPage extends SearchPage {
                 }
 
                 attemptedProductNames.add(product.productName());
-                if (!tryOpenQuantitySelectorFor(product.productName())) {
+                String probeFailure = quantitySelectorProbeFailure(product.productName());
+                if (!probeFailure.isBlank()) {
+                    attemptedProductNames.set(attemptedProductNames.size() - 1,
+                            product.productName() + " [" + probeFailure + "]");
                     reloadSearchResults(searchText);
                     continue;
                 }
@@ -279,6 +285,8 @@ public class AddProductToCartPage extends SearchPage {
                     return detailsPage;
                 }
 
+                attemptedProductNames.set(attemptedProductNames.size() - 1,
+                        product.productName() + " [details ADD button was not active]");
                 driver.get(searchUrl);
                 waitUntilSearchPageLoaded();
                 waitForSearchResultsToLoadCompletely(searchText);
@@ -1750,7 +1758,7 @@ public class AddProductToCartPage extends SearchPage {
         return canonicalNames;
     }
 
-    private boolean tryOpenQuantitySelectorFor(String productName) {
+    private String quantitySelectorProbeFailure(String productName) {
         waitForToastMessagesToClear();
 
         try {
@@ -1758,10 +1766,23 @@ public class AddProductToCartPage extends SearchPage {
             clickElementWithFallback(addButton);
             waitUntil(PRODUCT_PROBE_TIMEOUT, webDriver -> isQuantitySelectorDisplayedCorrectly()
                     && !getVisibleQuantityOptionLabels().isEmpty());
-            return true;
+            return "";
         } catch (ElementClickInterceptedException | StaleElementReferenceException | TimeoutException exception) {
-            return false;
+            return summarizeProbeException(exception);
         }
+    }
+
+    private String summarizeProbeException(RuntimeException exception) {
+        String message = exception.getMessage() == null ? "" : exception.getMessage()
+                .replaceAll("\\s+", " ")
+                .trim();
+        if (message.length() > 220) {
+            message = message.substring(0, 220) + "...";
+        }
+
+        return message.isBlank()
+                ? exception.getClass().getSimpleName()
+                : exception.getClass().getSimpleName() + ": " + message;
     }
 
     private WebElement waitForActiveAddButton(String productName) {

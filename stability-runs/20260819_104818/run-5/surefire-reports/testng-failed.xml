@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Arogga Web Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" name="Serial Regression(failed)" verbose="0">
+    <classes>
+      <class name="tests.user.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyExpiredOtpShowsProperValidationMessage"/>
+          <include name="resetLoginTestState"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.user.LoginTest -->
+      <class name="tests.user.AddProductToCartTest">
+        <methods>
+          <include name="verifyQuantitySelectionAndRemoveProduct"/>
+          <include name="setUp"/>
+          <include name="cleanCartAfterTest"/>
+          <include name="tearDown"/>
+          <include name="initializeAddToCartPage"/>
+        </methods>
+      </class> <!-- tests.user.AddProductToCartTest -->
+      <class name="tests.user.OtpTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyOtpExpiry"/>
+        </methods>
+      </class> <!-- tests.user.OtpTest -->
+    </classes>
+  </test> <!-- Serial Regression(failed) -->
+</suite> <!-- Failed suite [Arogga Web Automation Suite] -->

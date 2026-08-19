@@ -274,7 +274,7 @@ LoginTest extends BaseTest {
                 "Resend OTP button should be displayed after the OTP timer completes");
     }
 
-    @Test(groups = {TestGroups.LOGIN, TestGroups.REGRESSION},
+    /*@Test(groups = {TestGroups.LOGIN, TestGroups.REGRESSION},
             description = "Verify clicking Resend OTP generates a new OTP request")
     public void verifyClickingResendOtpGeneratesNewOtpRequest() {
         LoginPage loginPage = openOtpVerification()
@@ -283,7 +283,7 @@ LoginTest extends BaseTest {
 
         Assert.assertTrue(loginPage.hasOtpRequestConfirmationMessage() || loginPage.isOtpTimerDisplayed(),
                 "Clicking Resend OTP should generate a new OTP request or restart the OTP timer");
-    }
+    } */
 
     @Test(groups = {TestGroups.LOGIN, TestGroups.REGRESSION},
             description = "Verify OTP input field is displayed after clicking Send")

@@ -185,6 +185,6 @@ public class SearchPageTest extends BaseTest {
 
     private String dynamicProductSearchKeyword() {
         String keyword = config.dynamicProductSearchKeyword();
-        return keyword == null || keyword.isBlank() ? "a" : keyword.trim();
+        return keyword == null || keyword.isBlank() ? "Vaseline Lip Therapy Cocoa Butter 20g" : keyword.trim();
     }
 }

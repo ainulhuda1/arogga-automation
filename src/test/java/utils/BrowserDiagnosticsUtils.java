@@ -126,9 +126,10 @@ public final class BrowserDiagnosticsUtils {
     private static boolean isIgnorableJavaScriptError(String message) {
         String normalizedMessage = message == null ? "" : message.toLowerCase(Locale.ROOT);
 
-        return normalizedMessage.contains("api request error for url")
+        return (normalizedMessage.contains("api request error for url")
                 && normalizedMessage.contains("failed to fetch")
-                && isBackgroundLabServiceUrl(normalizedMessage);
+                && isBackgroundLabServiceUrl(normalizedMessage))
+                || isIgnorableDiagnosticUrl(normalizedMessage);
     }
 
     private static JsonNode parsePerformanceMessage(String rawMessage) {

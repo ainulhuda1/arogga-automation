@@ -3478,10 +3478,10 @@ public class CartPage extends BasePage {
 
     private boolean waitForCartToBecomeEmptyAfterRemoval() {
         try {
-            waitUntil(CART_TIMEOUT, webDriver -> {
+            if (!isCartDrawerOpen()) {
                 openCartDrawer();
-                return getCartDrawerStoreItemCount() == 0 || isEmptyCartMessageDisplayedNow();
-            });
+            }
+            waitUntil(CART_TIMEOUT, webDriver -> getCartDrawerStoreItemCount() == 0 || isEmptyCartMessageDisplayedNow());
             return true;
         } catch (TimeoutException exception) {
             return false;

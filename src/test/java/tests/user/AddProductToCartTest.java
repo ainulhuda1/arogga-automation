@@ -30,6 +30,12 @@ public class AddProductToCartTest extends BaseTest {
     private static final int EXPECTED_SINGLE_CART_ITEM_COUNT = 1;
     private static final int RAPID_ADD_CLICK_COUNT = 5;
     private static final int PRODUCT_DETAILS_ADD_CANDIDATE_LIMIT = 10;
+    private static final List<String> STABLE_PRODUCT_SEARCH_KEYWORDS = List.of(
+            "Vaseline Lip Therapy Cocoa Butter 20g",
+            "Vaseline Lip Therapy Cocoa Butter",
+            "Vaseline",
+            "Napa"
+    );
 
     private AddProductToCartPage addProductToCartPage;
     private CartPage cartPage;
@@ -755,15 +761,24 @@ public class AddProductToCartTest extends BaseTest {
 
     private String dynamicProductSearchKeyword() {
         String keyword = config.dynamicProductSearchKeyword();
-        return keyword == null || keyword.isBlank() ? "a" : keyword.trim();
+        return keyword == null || keyword.isBlank() ? STABLE_PRODUCT_SEARCH_KEYWORDS.get(0) : keyword.trim();
     }
 
     private List<String> availableProductSearchKeywords() {
-        return List.of(dynamicProductSearchKeyword(), "Napa", "a")
-                .stream()
-                .map(keyword -> keyword == null ? "" : keyword.trim())
-                .filter(keyword -> !keyword.isBlank())
-                .distinct()
-                .toList();
+        List<String> keywords = new ArrayList<>();
+        addKeywordIfMissing(keywords, dynamicProductSearchKeyword());
+        STABLE_PRODUCT_SEARCH_KEYWORDS.forEach(keyword -> addKeywordIfMissing(keywords, keyword));
+        return keywords;
+    }
+
+    private void addKeywordIfMissing(List<String> keywords, String keyword) {
+        if (keyword == null || keyword.isBlank()) {
+            return;
+        }
+
+        String normalizedKeyword = keyword.trim();
+        if (keywords.stream().noneMatch(existing -> existing.equalsIgnoreCase(normalizedKeyword))) {
+            keywords.add(normalizedKeyword);
+        }
     }
 }

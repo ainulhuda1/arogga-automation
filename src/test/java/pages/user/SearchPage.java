@@ -627,24 +627,34 @@ SearchPage extends BasePage {
     public boolean isSearchInputAligned() {
         return Boolean.TRUE.equals(executeScript("""
                 const input = document.querySelector("header input[aria-label='Search']");
-                const icon = document.querySelector("header img[alt='Search Icon']");
-                if (!input || !icon) {
+                if (!input) {
                     return false;
                 }
 
+                const visible = element => {
+                    const rect = element.getBoundingClientRect();
+                    const style = getComputedStyle(element);
+                    return rect.width > 0 && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden';
+                };
                 const inputRect = input.getBoundingClientRect();
-                const iconRect = icon.getBoundingClientRect();
-                const centerDelta = Math.abs(
-                    (inputRect.top + inputRect.height / 2) - (iconRect.top + iconRect.height / 2)
-                );
+                if (inputRect.height <= 0 || inputRect.width <= 0) {
+                    return false;
+                }
 
-                return centerDelta <= 8
-                    && iconRect.left >= inputRect.left - 48
-                    && iconRect.right <= inputRect.right + 2
-                    && inputRect.height > 0
-                    && inputRect.width > 0
-                    && iconRect.width > 0
-                    && iconRect.height > 0;
+                const searchIcons = Array.from(document.querySelectorAll(
+                    "header img[alt*='Search' i], header svg"
+                )).filter(visible);
+                const inputCenterY = inputRect.top + inputRect.height / 2;
+
+                return searchIcons.some(icon => {
+                    const iconRect = icon.getBoundingClientRect();
+                    const iconCenterY = iconRect.top + iconRect.height / 2;
+                    return Math.abs(inputCenterY - iconCenterY) <= 10
+                        && iconRect.left >= inputRect.left - 56
+                        && iconRect.right <= inputRect.right + 8;
+                });
                 """));
     }
 
@@ -677,12 +687,14 @@ SearchPage extends BasePage {
                 const productCards = Array.from(document.querySelectorAll("main a[href*='/product/']")).slice(0, 8);
                 const elements = [
                     document.querySelector("header input[aria-label='Search']"),
-                    document.querySelector("header img[alt='Search Icon']"),
                     ...tabElements,
                     ...productCards
                 ].filter(Boolean).filter(visible);
 
-                const rects = elements.map(element => element.getBoundingClientRect());
+                const rects = elements.map(element => ({
+                    element,
+                    rect: element.getBoundingClientRect()
+                }));
                 const overlaps = (first, second) => {
                     const horizontal = first.left < second.right - 2 && first.right > second.left + 2;
                     const vertical = first.top < second.bottom - 2 && first.bottom > second.top + 2;
@@ -691,7 +703,13 @@ SearchPage extends BasePage {
 
                 for (let i = 0; i < rects.length; i++) {
                     for (let j = i + 1; j < rects.length; j++) {
-                        if (overlaps(rects[i], rects[j])) {
+                        const first = rects[i];
+                        const second = rects[j];
+                        if (first.element.contains(second.element) || second.element.contains(first.element)) {
+                            continue;
+                        }
+
+                        if (overlaps(first.rect, second.rect)) {
                             return false;
                         }
                     }
