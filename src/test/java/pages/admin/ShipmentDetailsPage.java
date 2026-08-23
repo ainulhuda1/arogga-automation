@@ -37,7 +37,8 @@ public class ShipmentDetailsPage extends BasePage {
     );
     private static final Set<String> ADDRESS_STOP_WORDS = Set.of(
             "address", "shipping", "customer", "location", "phone", "mobile", "name", "area", "zone",
-            "road", "street", "house", "flat", "floor", "building", "district", "division"
+            "road", "street", "house", "flat", "floor", "building", "district", "division",
+            "null", "undefined", "none", "n/a"
     );
 
     private static final By SHIPMENT_ID = By.cssSelector(
@@ -217,12 +218,12 @@ public class ShipmentDetailsPage extends BasePage {
     }
 
     public boolean isShippingAddressMatching(String expectedAddress) {
-        String normalizedExpectedAddress = normalize(expectedAddress);
+        String normalizedExpectedAddress = normalizeAddressForComparison(expectedAddress);
         if (normalizedExpectedAddress.isBlank()) {
             return isShippingAddressDisplayed();
         }
 
-        String actualAddress = getShippingAddressText();
+        String actualAddress = normalizeAddressForComparison(getShippingAddressText());
         String compactExpected = normalizedExpectedAddress.replaceAll("\\s+", "").toLowerCase();
         String compactActual = actualAddress.replaceAll("\\s+", "").toLowerCase();
         if (!compactExpected.isBlank()
@@ -523,6 +524,16 @@ public class ShipmentDetailsPage extends BasePage {
         return value == null ? "" : String.valueOf(value).replaceAll("\\s+", " ").trim();
     }
 
+    private static String normalizeAddressForComparison(Object value) {
+        return normalize(value)
+                .replaceAll("(?i)\\b(null|undefined|none|n/a)\\b\\s*,?", " ")
+                .replaceAll("\\s*,\\s*", ", ")
+                .replaceAll("(?:,\\s*){2,}", ", ")
+                .replaceAll("\\s+", " ")
+                .replaceAll("^,\\s*|,\\s*$", "")
+                .trim();
+    }
+
     private record ProductRow(String sourceText, Optional<Integer> quantity, List<String> tokens) {
 
         private static ProductRow from(String sourceText) {
@@ -578,7 +589,7 @@ public class ShipmentDetailsPage extends BasePage {
 
     private static List<String> addressTokens(String sourceText) {
         Set<String> tokens = new LinkedHashSet<>();
-        Arrays.stream(normalize(sourceText).toLowerCase()
+        Arrays.stream(normalizeAddressForComparison(sourceText).toLowerCase()
                         .replaceAll("[^a-z0-9 ]", " ")
                         .replaceAll("\\s+", " ")
                         .trim()

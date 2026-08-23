@@ -552,7 +552,7 @@ public class ShippingAddressPage extends BasePage {
                 "Home",
                 true
         );
-        selectSubArea("Adabor 10");
+        selectSubArea("Adabor 10", "Adabor");
         submitAddressForm();
         waitForSavedAddressOrRecoverFromLabSyncBlock(addressData);
         return this;
@@ -1306,14 +1306,13 @@ public class ShippingAddressPage extends BasePage {
         waitUntil(ADDRESS_TIMEOUT, webDriver -> isDeliveryAreaSelected());
     }
 
-    private void selectSubArea(String subArea) {
-        if (subArea == null || subArea.isBlank()) {
-            return;
-        }
-
+    private void selectSubArea(String... preferredSubAreas) {
         waitUntil(ADDRESS_TIMEOUT, webDriver -> clickSubAreaButton());
-        waitUntil(ADDRESS_TIMEOUT, webDriver -> clickSubAreaOption(subArea));
-        waitUntil(ADDRESS_TIMEOUT, webDriver -> isSubAreaSelected(subArea));
+        String selectedSubArea = waitUntil(ADDRESS_TIMEOUT, webDriver -> {
+            String selected = clickPreferredOrFirstSubAreaOption(preferredSubAreas);
+            return selected.isBlank() ? null : selected;
+        });
+        waitUntil(ADDRESS_TIMEOUT, webDriver -> isSubAreaSelected(selectedSubArea));
     }
 
     private void submitAddressForm() {
@@ -2023,6 +2022,137 @@ public class ShippingAddressPage extends BasePage {
                         || null;
                 }
                 """, subArea));
+    }
+
+    private String clickPreferredOrFirstSubAreaOption(String... preferredSubAreas) {
+        List<String> preferredOptions = new ArrayList<>();
+        if (preferredSubAreas != null) {
+            for (String subArea : preferredSubAreas) {
+                String normalizedSubArea = normalizeText(subArea);
+                if (!normalizedSubArea.isBlank()) {
+                    preferredOptions.add(normalizedSubArea);
+                }
+            }
+        }
+
+        Object result = executeScript("""
+                const preferredOptions = Array.isArray(arguments[0]) ? arguments[0] : [];
+                const visible = element => {
+                    const rect = element.getBoundingClientRect();
+                    const style = getComputedStyle(element);
+                    return rect.width > 0 && rect.height > 0
+                        && style.display !== 'none'
+                        && style.visibility !== 'hidden'
+                        && Number(style.opacity || 1) !== 0;
+                };
+                const normalize = text => String(text || '').replace(/\\s+/g, ' ').trim();
+                const canonical = text => normalize(text).toLowerCase();
+                const form = activeFormModal();
+                const control = form ? fieldControl(form, 'select sub area') : null;
+                if (!form || !control) {
+                    return '';
+                }
+
+                const candidates = subAreaCandidates(form, control);
+                if (candidates.length === 0) {
+                    return '';
+                }
+
+                const preferredCandidate = preferredOptions
+                    .map(canonical)
+                    .filter(Boolean)
+                    .map(preferred => candidates.find(candidate => candidate.canonical === preferred)
+                        || candidates.find(candidate => candidate.canonical.includes(preferred)
+                            || preferred.includes(candidate.canonical)))
+                    .find(Boolean) || null;
+                const option = preferredCandidate || candidates[0];
+
+                option.element.scrollIntoView({ block: 'center', inline: 'nearest' });
+                clickLikeUser(option.element);
+                return option.text;
+
+                function activeFormModal() {
+                    return Array.from(document.querySelectorAll('body > div, [role="dialog"]'))
+                        .filter(visible)
+                        .filter(element => /(?:Add|Update)\\s+Shipping\\s+Address/i.test(
+                            normalize(element.innerText || element.textContent || '')
+                        ))
+                        .map(element => ({ element, rect: element.getBoundingClientRect() }))
+                        .sort((first, second) =>
+                            (first.rect.width * first.rect.height) - (second.rect.width * second.rect.height)
+                        )
+                        .map(candidate => candidate.element)[0] || null;
+                }
+
+                function fieldControl(formElement, labelText) {
+                    const label = Array.from(formElement.querySelectorAll('label'))
+                        .find(candidate => normalize(candidate.innerText || candidate.textContent)
+                            .toLowerCase().startsWith(labelText));
+                    if (!label) {
+                        return null;
+                    }
+
+                    let scope = label.parentElement;
+                    for (let depth = 0; depth < 4 && scope; depth += 1, scope = scope.parentElement) {
+                        const button = scope.querySelector('button');
+                        if (button) {
+                            return button;
+                        }
+                    }
+
+                    return null;
+                }
+
+                function subAreaCandidates(formElement, controlElement) {
+                    const controlRect = controlElement.getBoundingClientRect();
+                    return Array.from(formElement.querySelectorAll('button, [role="option"], li, div, span'))
+                        .filter(visible)
+                        .map(element => ({
+                            element,
+                            rect: element.getBoundingClientRect(),
+                            text: normalize(element.innerText || element.textContent || '')
+                        }))
+                        .filter(candidate => candidate.text)
+                        .filter(candidate => candidate.text.length <= 80)
+                        .filter(candidate => candidate.rect.top >= controlRect.bottom - 4
+                            && candidate.rect.left <= controlRect.right + 24
+                            && candidate.rect.right >= controlRect.left - 24)
+                        .filter(candidate => !/^(select\\s+sub\\s+area|submit|save|home|office)$/i.test(candidate.text))
+                        .filter(candidate => !/(full\\s+name|phone\\s+number|select\\s+delivery\\s+area|address\\s+type|shipping\\s+address)/i
+                            .test(candidate.text))
+                        .map(candidate => ({
+                            ...candidate,
+                            canonical: canonical(candidate.text),
+                            childCount: candidate.element.children.length
+                        }))
+                        .filter(candidate => candidate.canonical)
+                        .sort((first, second) =>
+                            first.childCount - second.childCount
+                            || first.rect.top - second.rect.top
+                            || first.rect.left - second.rect.left
+                        );
+                }
+
+                function clickLikeUser(element) {
+                    const rect = element.getBoundingClientRect();
+                    const x = rect.left + rect.width / 2;
+                    const y = rect.top + rect.height / 2;
+                    ['pointerdown', 'mousedown', 'pointerup', 'mouseup', 'click'].forEach(type => {
+                        element.dispatchEvent(new MouseEvent(type, {
+                            bubbles: true,
+                            cancelable: true,
+                            view: window,
+                            clientX: x,
+                            clientY: y
+                        }));
+                    });
+                    if (typeof element.click === 'function') {
+                        element.click();
+                    }
+                }
+                """, preferredOptions);
+
+        return result == null ? "" : normalizeText(String.valueOf(result));
     }
 
     private boolean isSubAreaSelected(String subArea) {

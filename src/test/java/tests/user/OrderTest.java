@@ -1023,18 +1023,9 @@ public class OrderTest extends BaseTest {
 
         createdShippingAddress = newAddress;
         shippingAddressPage.openAddNewAddressForm();
-        try {
-            shippingAddressPage.saveNewHomeDefaultAddress(newAddress);
-        } catch (RuntimeException exception) {
-            // The address card can be visible/selected even when the strict post-save wait times out.
-        }
-
-        try {
-            shippingAddressPage.selectAddress(newAddress.fullName());
-        } catch (RuntimeException exception) {
-            shippingAddressPage.selectCheckedOrFirstAddress();
-        }
-        shippingAddressPage.closeAddressModal();
+        shippingAddressPage.saveNewHomeDefaultAddress(newAddress)
+                .selectAddress(newAddress.fullName())
+                .closeAddressModal();
 
         cartPage.openCartDrawer()
                 .waitForProductLine(selectedProductName);
