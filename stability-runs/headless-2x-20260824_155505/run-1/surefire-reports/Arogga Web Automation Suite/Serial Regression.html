@@ -1,0 +1,639 @@
+<html>
+<head>
+<title>TestNG:  Serial Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Serial Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>67/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 24 15:55:09 GMT+06:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1197 seconds (1197222 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifySearchSuggestionsAreDisplayedWhileTyping()'><b>verifySearchSuggestionsAreDisplayedWhileTyping</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify search suggestions are displayed while typing</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.173)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;26.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fad64e775c87fba8ea274015643dba5, executeScript {script=const input = document.querySelector(&quot;header input[aria-label=&apos;Search&apos;]&quot;);
+if (!input) {
+    return false;
+}
+
+const value = input.value.trim();
+const now = Date.now();
+if (window.__aroggaSearchInputValue !== value) {
+    window.__aroggaSearchInputValue = value;
+    window.__aroggaSearchInputChangedAt = now;
+    return false;
+}
+
+return value === arguments[0]
+    &amp;&amp; now - (window.__aroggaSearchInputChangedAt || now) &gt;= 300;
+, args=[Vaseline Lip Therapy Cocoa Butter 20g]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.173, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/c0/0w6k5qhj307...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52814}, goog:processID: 47563, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 151.0.7922.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fad64e775c87fba8ea274015643dba5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+	at pages.user.BasePage.executeScript(BasePage.java:230)
+	at pages.user.SearchPage.lambda$waitUntilSearchInputValueSettles$0(SearchPage.java:1034)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.user.BasePage.waitUntil(BasePage.java:68)
+	at pages.user.SearchPage.waitUntilSearchInputValueSettles(SearchPage.java:1034)
+	at pages.user.SearchPage.enterProductName(SearchPage.java:146)
+	at pages.user.SearchPage.typeSearchTextForSuggestions(SearchPage.java:159)
+	at tests.user.SearchPageTest.verifySearchSuggestionsAreDisplayedWhileTyping(SearchPageTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27430936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27430936'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.173)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;26.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fad64e775c87fba8ea274015643dba5, executeScript {script=const input = document.querySelector(&quot;header input[aria-label=&apos;Search&apos;]&quot;);
+if (!input) {
+    return false;
+}
+
+const value = input.value.trim();
+const now = Date.now();
+if (window.__aroggaSearchInputValue !== value) {
+    window.__aroggaSearchInputValue = value;
+    window.__aroggaSearchInputChangedAt = now;
+    return false;
+}
+
+return value === arguments[0]
+    &amp;&amp; now - (window.__aroggaSearchInputChangedAt || now) &gt;= 300;
+, args=[Vaseline Lip Therapy Cocoa Butter 20g]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.173, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/c0/0w6k5qhj307...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52814}, goog:processID: 47563, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52814/devtoo..., se:cdpVersion: 151.0.7922.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fad64e775c87fba8ea274015643dba5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+	at pages.user.BasePage.executeScript(BasePage.java:230)
+	at pages.user.SearchPage.lambda$waitUntilSearchInputValueSettles$0(SearchPage.java:1034)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.user.BasePage.waitUntil(BasePage.java:68)
+	at pages.user.SearchPage.waitUntilSearchInputValueSettles(SearchPage.java:1034)
+	at pages.user.SearchPage.enterProductName(SearchPage.java:146)
+	at pages.user.SearchPage.typeSearchTextForSuggestions(SearchPage.java:159)
+	at tests.user.SearchPageTest.verifySearchSuggestionsAreDisplayedWhileTyping(SearchPageTest.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifyScrollingLoadsAdditionalProducts()'><b>verifyScrollingLoadsAdditionalProducts</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify scrolling loads additional products</td>
+<td></td>
+<td>0</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyLoginPageLoadsSuccessfully()'><b>verifyLoginPageLoadsSuccessfully</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Login page loads successfully</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OtpTest.verifyUpdatePhoneNumber()'><b>verifyUpdatePhoneNumber</b><br>Test class: tests.user.OtpTest<br>Test method: Verify Update Phone Number</td>
+<td></td>
+<td>0</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifySearchPageUiIntegrity()'><b>verifySearchPageUiIntegrity</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify Search page UI integrity</td>
+<td></td>
+<td>1</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyTermsAndConditionsLinkOpensCorrectPage()'><b>verifyTermsAndConditionsLinkOpensCorrectPage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Terms & Conditions link opens the correct page</td>
+<td></td>
+<td>1</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyDynamicCartPagePriceCalculationAndRefreshPersistence()'><b>verifyDynamicCartPagePriceCalculationAndRefreshPersistence</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify cart page dynamic product details, price calculation and refresh persistence</td>
+<td></td>
+<td>26</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyCategoryIcons()'><b>verifyCategoryIcons</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify category icons</td>
+<td></td>
+<td>0</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyOtpInputAcceptsOnlyNumericValues()'><b>verifyOtpInputAcceptsOnlyNumericValues</b><br>Test class: tests.user.LoginTest<br>Test method: Verify OTP input accepts only numeric values</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin()'><b>verifyBrowserBackButtonDoesNotReturnToLoginPageAfterSuccessfulLogin</b><br>Test class: tests.user.LoginTest<br>Test method: Verify browser Back button does not return to the Login page after successful login</td>
+<td></td>
+<td>7</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyValidPhoneNumberCanBeEntered()'><b>verifyValidPhoneNumberCanBeEntered</b><br>Test class: tests.user.LoginTest<br>Test method: Verify valid phone number can be entered</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors()'><b>verifyDynamicSearchResultLoadsWithAvailableProductAndNoErrors</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify dynamic search result loads with an available product and no JavaScript errors</td>
+<td></td>
+<td>3</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyLoginSessionRemainsActiveAfterPageRefresh()'><b>verifyLoginSessionRemainsActiveAfterPageRefresh</b><br>Test class: tests.user.LoginTest<br>Test method: Verify login session remains active after page refresh</td>
+<td></td>
+<td>7</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyLogoutFunctionality()'><b>verifyLogoutFunctionality</b><br>Test class: tests.user.LoginTest<br>Test method: Verify logout functionality</td>
+<td></td>
+<td>8</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyHomePageLoads()'><b>verifyHomePageLoads</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify Home page loads</td>
+<td></td>
+<td>0</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.AuthenticationTest.verifySessionPersistsAfterRefresh()'><b>verifySessionPersistsAfterRefresh</b><br>Test class: tests.user.AuthenticationTest<br>Test method: Verify session persists after refresh</td>
+<td></td>
+<td>6</td>
+<td>tests.user.AuthenticationTest@481ba2cf</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifySendButtonIsDisplayed()'><b>verifySendButtonIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Send button is displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AuthenticationTest.verifyLogoutCancelKeepsSession()'><b>verifyLogoutCancelKeepsSession</b><br>Test class: tests.user.AuthenticationTest<br>Test method: Verify Logout Cancel keeps session</td>
+<td></td>
+<td>7</td>
+<td>tests.user.AuthenticationTest@481ba2cf</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyLinkedInLoginButton()'><b>verifyLinkedInLoginButton</b><br>Test class: tests.user.LoginTest<br>Test method: Verify LinkedIn Login button</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyUserCanLoginAgainAfterLogout()'><b>verifyUserCanLoginAgainAfterLogout</b><br>Test class: tests.user.LoginTest<br>Test method: Verify user can login again after logout</td>
+<td></td>
+<td>14</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifyEmptySearchBehaviorAndRecentSearchClear()'><b>verifyEmptySearchBehaviorAndRecentSearchClear</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify empty search behavior and recent search clear</td>
+<td></td>
+<td>22</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyOtpInputFieldIsDisplayedAfterClickingSend()'><b>verifyOtpInputFieldIsDisplayedAfterClickingSend</b><br>Test class: tests.user.LoginTest<br>Test method: Verify OTP input field is displayed after clicking Send</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyFooterIcons()'><b>verifyFooterIcons</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify footer icons</td>
+<td></td>
+<td>0</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyPrivacyPolicyLinkOpensCorrectPage()'><b>verifyPrivacyPolicyLinkOpensCorrectPage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Privacy Policy link opens the correct page</td>
+<td></td>
+<td>1</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyResendOtpButtonIsDisplayed()'><b>verifyResendOtpButtonIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Resend OTP button is displayed</td>
+<td></td>
+<td>31</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OtpTest.verifyOtpPageLoads()'><b>verifyOtpPageLoads</b><br>Test class: tests.user.OtpTest<br>Test method: Verify OTP page loads</td>
+<td></td>
+<td>0</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyNonNumericCharactersValidation()'><b>verifyNonNumericCharactersValidation</b><br>Test class: tests.user.LoginTest<br>Test method: Verify non-numeric characters validation</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyAllNavigationIcons()'><b>verifyAllNavigationIcons</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify all navigation icons</td>
+<td></td>
+<td>0</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyOtpLengthValidation()'><b>verifyOtpLengthValidation</b><br>Test class: tests.user.LoginTest<br>Test method: Verify OTP length validation</td>
+<td></td>
+<td>6</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OtpTest.verifyClickingSendOpensOtpPage()'><b>verifyClickingSendOpensOtpPage</b><br>Test class: tests.user.OtpTest<br>Test method: Verify clicking Send opens OTP page</td>
+<td></td>
+<td>0</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting()'><b>verifyQuantitySelectorOptionsAndSelectedQuantityHighlighting</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify quantity selector options and selected quantity highlighting</td>
+<td></td>
+<td>1</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.admin.AdminOrderConfirmationTest.verifyAdminCanLoginSearchAndConfirmGeneratedOrder()'><b>verifyAdminCanLoginSearchAndConfirmGeneratedOrder</b><br>Test class: tests.admin.AdminOrderConfirmationTest<br>Test method: Verify Admin can login, search generated order and confirm it</td>
+<td></td>
+<td>6</td>
+<td>tests.admin.AdminOrderConfirmationTest@74589991</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyRefundReturnPolicyLinkOpensCorrectPage()'><b>verifyRefundReturnPolicyLinkOpensCorrectPage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Refund & Return Policy link opens the correct page</td>
+<td></td>
+<td>1</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests()'><b>verifyRapidAddClicksDoNotDuplicateCartItemToastOrRequests</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify rapid ADD clicks do not create duplicate cart items, toasts or failed requests</td>
+<td></td>
+<td>2</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyInvalidPhoneLengthValidation()'><b>verifyInvalidPhoneLengthValidation</b><br>Test class: tests.user.LoginTest<br>Test method: Verify invalid phone length validation</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyPhoneNumberFieldIsDisplayed()'><b>verifyPhoneNumberFieldIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Phone Number field is displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyIncorrectOtpCannotCompleteLogin()'><b>verifyIncorrectOtpCannotCompleteLogin</b><br>Test class: tests.user.LoginTest<br>Test method: Verify incorrect OTP cannot complete login</td>
+<td></td>
+<td>6</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OrderTest.verifyShippingAddressRegressionInsideCartDrawer()'><b>verifyShippingAddressRegressionInsideCartDrawer</b><br>Test class: tests.user.OrderTest<br>Test method: Verify shipping address, coupon and checkout summary regression inside cart drawer</td>
+<td></td>
+<td>27</td>
+<td>tests.user.OrderTest@31ff43be</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyQuantitySelectionAndRemoveProduct()'><b>verifyQuantitySelectionAndRemoveProduct</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify quantity selection and product removal update cart correctly</td>
+<td></td>
+<td>33</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage()'><b>verifyClickingGoogleLoginRedirectsToGoogleAuthenticationPage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify clicking Google Login redirects to Google authentication page</td>
+<td></td>
+<td>1</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OtpTest.verifyInvalidOtpError()'><b>verifyInvalidOtpError</b><br>Test class: tests.user.OtpTest<br>Test method: Verify invalid OTP error</td>
+<td></td>
+<td>6</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyAddProductToCartFromSearchResultAfterLoginAndSearch()'><b>verifyAddProductToCartFromSearchResultAfterLoginAndSearch</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify first available dynamic search product can be opened and added to cart after login</td>
+<td></td>
+<td>7</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifyDynamicSearchShowsAutomaticResultsAfterTyping()'><b>verifyDynamicSearchShowsAutomaticResultsAfterTyping</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify typing dynamic keyword displays automatic results</td>
+<td></td>
+<td>11</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule()'><b>verifyCartPersistenceAfterLogoutAndLoginMatchesBusinessRule</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify cart behavior after logout and login matches configured business rule</td>
+<td></td>
+<td>12</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyRefundReturnPolicyLinkIsDisplayed()'><b>verifyRefundReturnPolicyLinkIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Refund & Return Policy link is displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyHeaderLogo()'><b>verifyHeaderLogo</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify header logo</td>
+<td></td>
+<td>0</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.OrderTest.verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression()'><b>verifyCodPlaceOrderConfirmationPaymentAndTrackOrderRegression</b><br>Test class: tests.user.OrderTest<br>Test method: Verify COD place order, confirmation, payment details and track order regression</td>
+<td></td>
+<td>117</td>
+<td>tests.user.OrderTest@31ff43be</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage()'><b>verifyClickingLinkedInLoginRedirectsToLinkedInAuthenticationPage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify clicking LinkedIn Login redirects to LinkedIn authentication page</td>
+<td></td>
+<td>1</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AuthenticationTest.verifyValidOtpLogsInSuccessfully()'><b>verifyValidOtpLogsInSuccessfully</b><br>Test class: tests.user.AuthenticationTest<br>Test method: Verify valid OTP (1234) logs in successfully</td>
+<td></td>
+<td>6</td>
+<td>tests.user.AuthenticationTest@481ba2cf</td></tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifyBackButtonIsVisibleAndFunctional()'><b>verifyBackButtonIsVisibleAndFunctional</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify Search page back navigation</td>
+<td></td>
+<td>9</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyDynamicProductCardContentAssetsAndAlignment()'><b>verifyDynamicProductCardContentAssetsAndAlignment</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify dynamic product card content, assets, formatting and alignment</td>
+<td></td>
+<td>0</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyPrivacyPolicyLinkIsDisplayed()'><b>verifyPrivacyPolicyLinkIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Privacy Policy link is displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyInvalidOtpShowsProperValidationMessage()'><b>verifyInvalidOtpShowsProperValidationMessage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify invalid OTP shows proper validation message</td>
+<td></td>
+<td>7</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp()'><b>verifySuccessfulLoginUsingValidPhoneNumberAndValidOtp</b><br>Test class: tests.user.LoginTest<br>Test method: Verify successful login using valid phone number and valid OTP</td>
+<td></td>
+<td>6</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyTermsAndConditionsLinkIsDisplayed()'><b>verifyTermsAndConditionsLinkIsDisplayed</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Terms & Conditions link is displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.OtpTest.verifyReferralCodeAccordion()'><b>verifyReferralCodeAccordion</b><br>Test class: tests.user.OtpTest<br>Test method: Verify Referral Code accordion</td>
+<td></td>
+<td>0</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.HomePageTest.verifyProfileAvatar()'><b>verifyProfileAvatar</b><br>Test class: tests.user.HomePageTest<br>Test method: Verify profile avatar</td>
+<td></td>
+<td>6</td>
+<td>tests.user.HomePageTest@58ce9668</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyDynamicProductAddToCartAndQuantityState()'><b>verifyDynamicProductAddToCartAndQuantityState</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify dynamic product can be added to cart and quantity state updates</td>
+<td></td>
+<td>6</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifySendButtonEnabledAfterValidPhone()'><b>verifySendButtonEnabledAfterValidPhone</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Send button enabled after valid phone</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AddProductToCartTest.verifyDynamicAddButtonSelectorAndToastLifecycle()'><b>verifyDynamicAddButtonSelectorAndToastLifecycle</b><br>Test class: tests.user.AddProductToCartTest<br>Test method: Verify dynamic ADD opens quantity selector without reload and toast appears once then dismisses</td>
+<td></td>
+<td>6</td>
+<td>tests.user.AddProductToCartTest@b4711e2</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyUserProfileAccountIconIsDisplayedAfterLogin()'><b>verifyUserProfileAccountIconIsDisplayedAfterLogin</b><br>Test class: tests.user.LoginTest<br>Test method: Verify authenticated header menus and layout after login</td>
+<td></td>
+<td>7</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyGoogleLoginButton()'><b>verifyGoogleLoginButton</b><br>Test class: tests.user.LoginTest<br>Test method: Verify Google Login button</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.SearchPageTest.verifyNoResultsStateWhenNoMatchingProductsExist()'><b>verifyNoResultsStateWhenNoMatchingProductsExist</b><br>Test class: tests.user.SearchPageTest<br>Test method: Verify No Results state</td>
+<td></td>
+<td>0</td>
+<td>tests.user.SearchPageTest@2796aeae</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyEmptyPhoneNumberValidation()'><b>verifyEmptyPhoneNumberValidation</b><br>Test class: tests.user.LoginTest<br>Test method: Verify empty phone number validation</td>
+<td></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.AuthenticationTest.verifySuccessfulLoginRedirectsToHome()'><b>verifySuccessfulLoginRedirectsToHome</b><br>Test class: tests.user.AuthenticationTest<br>Test method: Verify successful login redirects to Home</td>
+<td></td>
+<td>6</td>
+<td>tests.user.AuthenticationTest@481ba2cf</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyUserRedirectedToHomePageAfterSuccessfulLogin()'><b>verifyUserRedirectedToHomePageAfterSuccessfulLogin</b><br>Test class: tests.user.LoginTest<br>Test method: Verify user is redirected to Home page after successful login</td>
+<td></td>
+<td>7</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+<tr>
+<td title='tests.user.VisualRegressionTest.verifyNoUnexpectedUiChangesAfterDeployment()'><b>verifyNoUnexpectedUiChangesAfterDeployment</b><br>Test class: tests.user.VisualRegressionTest<br>Test method: Verify no unexpected UI changes after deployment</td>
+<td></td>
+<td>0</td>
+<td>tests.user.VisualRegressionTest@4716be8b</td></tr>
+<tr>
+<td title='tests.admin.ShipmentProcessingTest.verifyShipmentProcessingForConfirmedGeneratedOrder()'><b>verifyShipmentProcessingForConfirmedGeneratedOrder</b><br>Test class: tests.admin.ShipmentProcessingTest<br>Test method: Verify Admin can create, verify, inspect and track shipment for confirmed generated order</td>
+<td></td>
+<td>150</td>
+<td>tests.admin.ShipmentProcessingTest@146dfe6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.user.OtpTest.verifyOtpExpiry()'><b>verifyOtpExpiry</b><br>Test class: tests.user.OtpTest<br>Test method: Verify OTP expiry</td>
+<td><div><pre>org.testng.SkipException: OTP expiry is disabled for this test environment.
+	at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+	at tests.user.OtpTest.verifyOtpExpiry(OtpTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2347168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2347168'><pre>org.testng.SkipException: OTP expiry is disabled for this test environment.
+	at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+	at tests.user.OtpTest.verifyOtpExpiry(OtpTest.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.user.OtpTest@56673b2c</td></tr>
+<tr>
+<td title='tests.user.LoginTest.verifyExpiredOtpShowsProperValidationMessage()'><b>verifyExpiredOtpShowsProperValidationMessage</b><br>Test class: tests.user.LoginTest<br>Test method: Verify expired OTP shows proper validation message</td>
+<td><div><pre>org.testng.SkipException: OTP expiry is disabled for this test environment.
+	at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+	at tests.user.LoginTest.verifyExpiredOtpShowsProperValidationMessage(LoginTest.java:245)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892424348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace892424348'><pre>org.testng.SkipException: OTP expiry is disabled for this test environment.
+	at base.BaseTest.skipIfOtpExpiryIsNotSupported(BaseTest.java:108)
+	at tests.user.LoginTest.verifyExpiredOtpShowsProperValidationMessage(LoginTest.java:245)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.user.LoginTest@172b013</td></tr>
+</table><p>
+</body>
+</html>

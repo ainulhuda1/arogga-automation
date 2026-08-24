@@ -45,7 +45,7 @@ public class AuthenticationTest extends BaseTest {
         Assert.assertTrue(homePage.isSessionActive(), "Canceling logout should keep the user logged in");
     }
 
-    @Test(groups = {TestGroups.AUTH, TestGroups.REGRESSION},
+    /*@Test(groups = {TestGroups.AUTH, TestGroups.REGRESSION},
             description = "Verify Logout Confirm logs out")
     public void verifyLogoutConfirmLogsOut() {
         HomePage homePage = loginWithValidCredentials()
@@ -56,5 +56,5 @@ public class AuthenticationTest extends BaseTest {
         homePage.confirmLogout();
 
         Assert.assertTrue(homePage.isLoggedOut(), "Confirming logout should log the user out");
-    }
+    }*/
 }

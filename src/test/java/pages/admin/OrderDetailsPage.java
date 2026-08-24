@@ -187,14 +187,18 @@ public class OrderDetailsPage extends BasePage {
                 const excluded = /shipment id|shipment status|load shipment|timeline/i;
                 const productTable = /product|medicine|item/i;
                 const quantityTable = /\\bqty\\b|quantity/i;
+                const productHeader = /^(name|product|medicine|item|brand|variant|form|strength)$/i;
+                const quantityHeader = /^(qty|quantity|total qty)$/i;
                 const rows = [];
 
                 Array.from(document.querySelectorAll('table'))
                     .filter(visible)
-                    .map(table => ({ table, text: normalize(table.innerText || table.textContent || '') }))
-                    .filter(candidate => productTable.test(candidate.text)
-                        && quantityTable.test(candidate.text)
-                        && !excluded.test(candidate.text))
+                    .map(table => ({
+                        table,
+                        text: normalize(table.innerText || table.textContent || ''),
+                        headers: tableHeaders(table)
+                    }))
+                    .filter(candidate => isOrderedProductTable(candidate))
                     .forEach(candidate => rows.push(...tableRows(candidate.table)));
 
                 if (rows.length === 0) {
@@ -213,12 +217,11 @@ public class OrderDetailsPage extends BasePage {
                 return unique(rows).slice(0, 30);
 
                 function tableRows(table) {
-                    const headers = Array.from(table.querySelectorAll('thead th, [role="columnheader"]'))
-                        .map(header => normalize(header.innerText || header.textContent || ''))
-                        .filter(Boolean);
+                    const headers = tableHeaders(table);
 
                     return Array.from(table.querySelectorAll('tbody tr, [role="row"]'))
                         .filter(visible)
+                        .filter(row => !isHeaderOnlyRow(row))
                         .map(row => {
                             const cells = Array.from(row.querySelectorAll('td, [role="cell"]'))
                                 .filter(visible)
@@ -234,9 +237,60 @@ public class OrderDetailsPage extends BasePage {
                             return normalize(row.innerText || row.textContent || '');
                         })
                         .filter(text => text
-                            && productTable.test(text)
+                            && hasProductIdentity(text)
                             && quantityTable.test(text)
                             && !/^product\\s+.*qty/i.test(text));
+                }
+
+                function tableHeaders(table) {
+                    return Array.from(table.querySelectorAll('thead th, [role="columnheader"], th'))
+                        .filter(visible)
+                        .map(header => normalize(header.innerText || header.textContent || ''))
+                        .filter(Boolean);
+                }
+
+                function isOrderedProductTable(candidate) {
+                    if (excluded.test(candidate.text)) {
+                        return false;
+                    }
+
+                    const headerText = candidate.headers.join(' ');
+                    const hasLegacyProductWords = productTable.test(candidate.text) && quantityTable.test(candidate.text);
+                    const hasCurrentProductHeaders = candidate.headers.some(header => productHeader.test(header))
+                        && candidate.headers.some(header => quantityHeader.test(header));
+                    const hasProductLikeRows = Array.from(candidate.table.querySelectorAll('tbody tr, [role="row"]'))
+                        .filter(visible)
+                        .filter(row => !isHeaderOnlyRow(row))
+                        .some(row => {
+                            const text = normalize(row.innerText || row.textContent || '');
+                            return hasProductIdentity(text) && quantityTable.test(headerText + ' ' + text);
+                        });
+
+                    return (hasLegacyProductWords || hasCurrentProductHeaders) && hasProductLikeRows;
+                }
+
+                function isHeaderOnlyRow(row) {
+                    if (String(row.parentElement?.tagName || '').toLowerCase() === 'thead') {
+                        return true;
+                    }
+
+                    const cells = Array.from(row.children)
+                        .filter(visible)
+                        .map(cell => normalize(cell.innerText || cell.textContent || ''))
+                        .filter(Boolean);
+                    return cells.length > 0
+                        && cells.every(cell => /^(sl\\s*no|id|name|variant|form|strength|cold|brand|qty|total\\s+qty|total\\s+mrp|total\\s+discount\\s+price|remove)$/i.test(cell));
+                }
+
+                function hasProductIdentity(text) {
+                    const normalizedText = normalize(text);
+                    return productTable.test(normalizedText)
+                        || /\\bName\\s*:/.test(normalizedText)
+                        || /\\bBrand\\s*:/.test(normalizedText)
+                        || /\\bVariant\\s*:/.test(normalizedText)
+                        || /\\bForm\\s*:/.test(normalizedText)
+                        || /\\bStrength\\s*:/.test(normalizedText)
+                        || /[A-Za-z][A-Za-z0-9'().-]*(?:\\s+[A-Za-z0-9'().-]+){1,}/.test(normalizedText);
                 }
 
                 function unique(values) {
