@@ -33,8 +33,14 @@ jobs:
         with:
           chrome-version: stable
 
-      - name: Run Automation Tests
-        run: mvn clean test -DsuiteXmlFile=testng.xml
+      - name: Verify Java
+        run: java -version
+
+      - name: Verify Chrome
+        run: google-chrome --version
+
+      - name: Run Selenium TestNG Automation
+        run: mvn clean test -DsuiteXmlFile=testng.xml -Dheadless=true
 
       - name: Upload TestNG Reports
         if: always()
@@ -51,5 +57,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: screenshots
-          path: target/screenshots/
+          path: |
+            target/screenshots/
           if-no-files-found: warn
