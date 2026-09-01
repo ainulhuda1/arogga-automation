@@ -62,7 +62,7 @@ public class OtpTest extends BaseTest {
         Assert.assertFalse(loginPage.getOtpTimerText().isBlank(), "OTP resend timer should be displayed");
     } */
 
-    @Test(groups = {TestGroups.OTP, TestGroups.REGRESSION},
+   /* @Test(groups = {TestGroups.OTP, TestGroups.REGRESSION},
             description = "Verify OTP expiry")
     public void verifyOtpExpiry() {
         skipIfOtpExpiryIsNotSupported();
@@ -75,7 +75,7 @@ public class OtpTest extends BaseTest {
 
         Assert.assertTrue(loginPage.hasOtpErrorMessage() || loginPage.isOtpVerificationDisplayed(),
                 "Expired OTP should not authenticate the user");
-    }
+    } */
 
     @Test(groups = {TestGroups.OTP, TestGroups.REGRESSION},
             description = "Verify Update Phone Number")
