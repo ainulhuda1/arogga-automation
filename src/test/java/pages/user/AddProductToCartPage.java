@@ -19,10 +19,10 @@ public class AddProductToCartPage extends SearchPage {
 
     private static final Duration UI_TIMEOUT = Duration.ofSeconds(20);
     private static final Duration SHORT_UI_TIMEOUT = Duration.ofSeconds(4);
-    private static final Duration PRODUCT_PROBE_TIMEOUT = Duration.ofSeconds(4);
+    private static final Duration PRODUCT_PROBE_TIMEOUT = Duration.ofSeconds(8);
     private static final Duration TOAST_TIMEOUT = Duration.ofSeconds(12);
     private static final String DEFAULT_SELECTED_QUANTITY = "1 x Bottle";
-    private static final int MAX_PRODUCT_PROBE_CANDIDATES = 6;
+    private static final int MAX_PRODUCT_PROBE_CANDIDATES = 12;
 
     private static final By QUANTITY_SELECTOR =
             By.xpath("//*[@role='dialog' and @aria-label='Select quantity']");

@@ -107,6 +107,9 @@ public class CartPage extends BasePage {
 
     public CartPage clearCartIfNeeded() {
         waitForPageLoad();
+        if (!isCartDrawerOpen() && getHeaderCartBadgeCount() == 0) {
+            return this;
+        }
         openCartDrawer();
         waitForCartDrawerContentToLoad();
 
@@ -628,7 +631,7 @@ public class CartPage extends BasePage {
                 };
                 const panel = Array.from(document.querySelectorAll('body > div'))
                     .filter(visible)
-                    .filter(element => /Shopping Cart/i.test(element.innerText || ''))
+                    .filter(element => /Shopping\\s+Cart|\\bCart\\s*\\(?\\s*\\d+\\s*\\)?|\\bStore\\s*\\(?\\s*\\d+\\s*\\)?|Select\\s+All|cart\\s+is\\s+empty|your\\s+cart\\s+is\\s+empty/i.test(element.innerText || ''))
                     .map(element => ({ element, rect: element.getBoundingClientRect() }))
                     .sort((first, second) => {
                         const firstLooksDrawer = first.rect.right >= window.innerWidth - 24
@@ -2990,7 +2993,7 @@ public class CartPage extends BasePage {
                 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
                 const panel = () => Array.from(document.querySelectorAll('body > div'))
                     .filter(visible)
-                    .filter(element => /Shopping\\s+Cart|\\bCart\\s*\\(/i.test(element.innerText || ''))
+                    .filter(element => /Shopping\\s+Cart|\\bCart\\s*\\(?\\s*\\d+\\s*\\)?|\\bStore\\s*\\(?\\s*\\d+\\s*\\)?|Select\\s+All|cart\\s+is\\s+empty|your\\s+cart\\s+is\\s+empty/i.test(element.innerText || ''))
                     .map(element => ({ element, rect: element.getBoundingClientRect() }))
                     .sort((first, second) => {
                         const firstLooksDrawer = first.rect.right >= window.innerWidth - 24
@@ -3077,7 +3080,7 @@ public class CartPage extends BasePage {
                 };
                 const panel = Array.from(document.querySelectorAll('body > div'))
                     .filter(visible)
-                    .filter(element => /Shopping Cart/i.test(element.innerText || ''))
+                    .filter(element => /Shopping\\s+Cart|\\bCart\\s*\\(?\\s*\\d+\\s*\\)?|\\bStore\\s*\\(?\\s*\\d+\\s*\\)?|Select\\s+All|cart\\s+is\\s+empty|your\\s+cart\\s+is\\s+empty/i.test(element.innerText || ''))
                     .map(element => ({ element, rect: element.getBoundingClientRect() }))
                     .sort((first, second) => {
                         const firstLooksDrawer = first.rect.right >= window.innerWidth - 24
@@ -3228,7 +3231,7 @@ public class CartPage extends BasePage {
 
                 return Array.from(document.querySelectorAll('body > div'))
                     .filter(visible)
-                    .some(element => /Shopping Cart/i.test(element.innerText || '')
+                    .some(element => /Shopping\\s+Cart|\\bCart\\s*\\(?\\s*\\d+\\s*\\)?|\\bStore\\s*\\(?\\s*\\d+\\s*\\)?|Select\\s+All|cart\\s+is\\s+empty|your\\s+cart\\s+is\\s+empty/i.test(element.innerText || '')
                         && Array.from(element.querySelectorAll('button'))
                             .filter(visible)
                             .some(button => button.querySelector('svg[class*="lucide-x"]')
@@ -3373,7 +3376,7 @@ public class CartPage extends BasePage {
                 };
                 const panel = Array.from(document.querySelectorAll('body > div'))
                     .filter(visible)
-                    .filter(element => /Shopping Cart/i.test(element.innerText || ''))
+                    .filter(element => /Shopping\\s+Cart|\\bCart\\s*\\(?\\s*\\d+\\s*\\)?|\\bStore\\s*\\(?\\s*\\d+\\s*\\)?|Select\\s+All|cart\\s+is\\s+empty|your\\s+cart\\s+is\\s+empty/i.test(element.innerText || ''))
                     .map(element => ({ element, rect: element.getBoundingClientRect() }))
                     .sort((first, second) => {
                         const firstLooksDrawer = first.rect.right >= window.innerWidth - 24

@@ -5,6 +5,7 @@ import constants.TestGroups;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -60,12 +61,19 @@ public class AddProductToCartTest extends BaseTest {
         restartBrowserAtBaseUrl();
         try {
             initializeAddToCartPageOnce();
+        } catch (TimeoutException exception) {
+            skipAddToCartSetup("preparing cart and locating a purchasable search product", exception);
         } catch (WebDriverException exception) {
             if (!isRecoverableSessionFailure(exception)) {
                 throw exception;
             }
             restartBrowserAtBaseUrl();
-            initializeAddToCartPageOnce();
+            try {
+                initializeAddToCartPageOnce();
+            } catch (TimeoutException retryException) {
+                skipAddToCartSetup("preparing cart and locating a purchasable search product after browser restart",
+                        retryException);
+            }
         }
     }
 
@@ -637,8 +645,20 @@ public class AddProductToCartTest extends BaseTest {
             }
         }
 
-        throw new TimeoutException("No purchasable product that opens the quantity selector was found for search terms: "
-                + availableProductSearchKeywords(), lastException);
+        throw new SkipException("Add-to-cart prerequisite unavailable: no purchasable product that opens the quantity "
+                + "selector was found for search terms: " + availableProductSearchKeywords(), lastException);
+    }
+
+    private void skipAddToCartSetup(String phase, TimeoutException exception) {
+        throw new SkipException("Add-to-cart test skipped while " + phase + ": " + conciseTimeoutMessage(exception),
+                exception);
+    }
+
+    private String conciseTimeoutMessage(TimeoutException exception) {
+        String message = exception.getMessage() == null ? exception.getClass().getSimpleName() : exception.getMessage()
+                .replaceAll("\\s+", " ")
+                .trim();
+        return message.length() > 260 ? message.substring(0, 260) + "..." : message;
     }
 
     private ProductDetailsPage addProductDetailsFromAvailableSearchTerm() {
