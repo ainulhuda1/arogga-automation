@@ -13,11 +13,14 @@ import org.openqa.selenium.logging.LoggingPreferences;
 import utils.ConfigReader;
 
 import java.time.Duration;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 
 public final class DriverFactory {
 
     private static final ThreadLocal<WebDriver> DRIVER = new ThreadLocal<>();
+    private static final Set<String> RESOLVED_DRIVER_BINARIES = ConcurrentHashMap.newKeySet();
 
     private DriverFactory() {
     }
@@ -75,7 +78,7 @@ public final class DriverFactory {
             // ====================================================
             case "firefox" -> {
 
-                WebDriverManager.firefoxdriver().setup();
+                setupDriverBinaryOnce("firefox");
 
                 FirefoxOptions options = new FirefoxOptions();
 
@@ -93,7 +96,7 @@ public final class DriverFactory {
             // ====================================================
             case "edge" -> {
 
-                WebDriverManager.edgedriver().setup();
+                setupDriverBinaryOnce("edge");
 
                 EdgeOptions options = new EdgeOptions();
 
@@ -107,6 +110,7 @@ public final class DriverFactory {
                 if (config.headless()) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1440,1200");
+                    options.addArguments("--no-sandbox");
                 }
 
                 yield new EdgeDriver(options);
@@ -117,17 +121,20 @@ public final class DriverFactory {
             // ====================================================
             case "chrome" -> {
 
-                WebDriverManager.chromedriver().setup();
+                setupDriverBinaryOnce("chrome");
 
                 ChromeOptions options = new ChromeOptions();
 
                 options.addArguments("--remote-allow-origins=*");
                 options.addArguments("--disable-notifications");
+                options.addArguments("--disable-extensions");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--disable-gpu");
                 options.addArguments("--disable-background-timer-throttling");
                 options.addArguments("--disable-backgrounding-occluded-windows");
                 options.addArguments("--disable-renderer-backgrounding");
+                options.addArguments("--no-first-run");
+                options.addArguments("--no-default-browser-check");
 
                 options.setCapability(
                         "goog:loggingPrefs",
@@ -137,6 +144,7 @@ public final class DriverFactory {
                 if (config.headless()) {
                     options.addArguments("--headless=new");
                     options.addArguments("--window-size=1440,1200");
+                    options.addArguments("--no-sandbox");
                 }
 
                 yield new ChromeDriver(options);
@@ -148,6 +156,19 @@ public final class DriverFactory {
         };
     }
 
+    private static void setupDriverBinaryOnce(String browser) {
+        if (!RESOLVED_DRIVER_BINARIES.add(browser)) {
+            return;
+        }
+
+        switch (browser) {
+            case "firefox" -> WebDriverManager.firefoxdriver().setup();
+            case "edge" -> WebDriverManager.edgedriver().setup();
+            case "chrome" -> WebDriverManager.chromedriver().setup();
+            default -> throw new IllegalArgumentException("Unsupported browser: " + browser);
+        }
+    }
+
     private static LoggingPreferences createLoggingPreferences() {
 
         LoggingPreferences loggingPreferences =
@@ -155,7 +176,7 @@ public final class DriverFactory {
 
         loggingPreferences.enable(
                 LogType.BROWSER,
-                Level.ALL
+                Level.SEVERE
         );
 
         loggingPreferences.enable(
