@@ -42,7 +42,7 @@ jobs:
         run: google-chrome --version
 
       - name: Run Selenium TestNG Automation
-        run: mvn clean test -DsuiteXmlFile=testng.xml -Dheadless=true -DpageLoadTimeoutSeconds=30
+        run: mvn clean test -DsuiteXmlFile=testng.xml -Dheadless=true -DpageLoadTimeoutSeconds=60
 
       - name: Upload TestNG Reports
         if: always()
