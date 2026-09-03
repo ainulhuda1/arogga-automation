@@ -1,7 +1,6 @@
 package drivers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -126,7 +125,6 @@ public final class DriverFactory {
 
                 ChromeOptions options = new ChromeOptions();
 
-                options.setPageLoadStrategy(PageLoadStrategy.EAGER);
                 options.addArguments("--remote-allow-origins=*");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-extensions");

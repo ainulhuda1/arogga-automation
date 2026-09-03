@@ -7,7 +7,6 @@ import drivers.DriverFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.IConfigurationListener;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
@@ -19,7 +18,7 @@ import reports.ExtentTestManager;
 import utils.ScreenshotUtils;
 import utils.TestContext;
 
-public class TestListener implements ITestListener, ISuiteListener, IConfigurationListener {
+public class TestListener implements ITestListener, ISuiteListener {
 
     private static final Logger LOGGER = LogManager.getLogger(TestListener.class);
 
@@ -63,28 +62,13 @@ public class TestListener implements ITestListener, ISuiteListener, IConfigurati
     @Override
     public void onTestSkipped(ITestResult result) {
         ExtentTest test = getCurrentTest(result);
-        Throwable throwable = result.getThrowable();
         if (result.getThrowable() == null) {
             test.skip("Test skipped");
         } else {
-            test.skip(throwable);
+            test.skip(result.getThrowable());
         }
         ExtentTestManager.unload();
-        if (throwable == null) {
-            LOGGER.warn("Test skipped: {}", result.getName());
-        } else {
-            LOGGER.warn("Test skipped: {} - {}", result.getName(), throwable.getMessage(), throwable);
-        }
-    }
-
-    @Override
-    public void onConfigurationFailure(ITestResult result) {
-        Throwable throwable = result.getThrowable();
-        if (throwable == null) {
-            LOGGER.error("Configuration failed: {}", result.getName());
-        } else {
-            LOGGER.error("Configuration failed: {} - {}", result.getName(), throwable.getMessage(), throwable);
-        }
+        LOGGER.warn("Test skipped: {}", result.getName());
     }
 
     @Override
